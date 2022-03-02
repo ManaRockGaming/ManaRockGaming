@@ -1,0 +1,180 @@
+body	{margin: 0;
+	font-size: 0;}
+
+
+@font-face	{font-family: rakkas; src: url('rakkasregular.ttf'); } 
+.rakkas	{font-family: rakkas; font-size: 2vh; }
+
+/* ------------------------------------------- Top Navigation ------------------------------------------- */
+
+.topnavlogo	{width: 100%;
+		padding: 10px 0px;
+		background-color: black;
+		text-align: center;}
+
+.topnav		{width: 100%;
+		table-layout: fixed;
+		background-color: #400040;
+		text-align: center;}
+
+.topnav a	{text-decoration: none;
+		font-size: 6vh;
+		color: white;
+		font-family: rakkas;
+		text-shadow:
+   		-2px -2px 0 #000,
+    		2px -2px 0 #000,
+    		-2px 2px 0 #000,
+    		2px 2px 0 #000;}
+
+.topnav a:hover	{background-color: #781a78;
+		color: black;
+		text-shadow:
+   		0px 0px 0 #000,
+    		2px 0px 0 #000,
+    		0px 0px 0 #000,
+    		0px 0px 0 #000;}
+		
+/* ------------------------------------------- Update Slide ------------------------------------------- */
+
+.updateslide	{table-layout: fixed;
+		width: 100%;
+		background-color: #400040;
+		color: white;
+		font-size: 2.25vh;}
+
+.updateslidetable	{table-layout: fixed;
+			width: 100%;}
+
+.updateslidetable td	{padding: 0px 10px;
+			width: 33%;
+			vertical-align: top;}
+
+#slide	{width:100%;}	
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+
+.slideshow-container	{padding: 10px 10px;
+			width: 100%;}
+
+/* Slideshow Dots/Indicators */
+.slidedot	{cursor: pointer;
+		height: 13px;
+		width: 13px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;}
+
+/* Slideshow Active Dots/Indicators */
+.active, .dot:hover	{background-color: #717171;}
+
+/* Slideshow Animation */
+.fade	{-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;}
+        
+@-webkit-keyframes fade	{from {opacity: .4}	to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4}	to {opacity: 1}}
+
+/* On Smaller Screens, Decrease Text Size */
+@media only screen and (max-width: 300px)	{.text {font-size: 11px}}
+
+/* ------------------------------------------- Top News & Social Slide ------------------------------------------- */
+
+.topnews	{width: 100%;
+		background-color: #781a78;
+		font-size: 2.25vh;}
+
+.topnews td	{padding: 0px 10px;
+		vertical-align: top;}
+
+/* ------------------------------------------- Calendar ------------------------------------------- */
+
+.calendar	{padding: 10px 10px;}
+
+
+/* ------------------------------------------- Footer ------------------------------------------- */
+
+.footer	{width: 100%;
+	padding: 0px 10px;
+	background-color: black;
+	color: white;
+	font-size: 2.25vh;}
+
+.footertable	{table-layout: fixed;
+		width: 100%;}
+
+.footertable td	{padding: 0px 10px;
+		width: 33%;
+		vertical-align: top;
+		text-align: center;}
+
+
+
+
+
+.aboutusbody	{padding: 10px 40px;
+		width: 100%;
+		background-color: #781a78;}
+		
+/* --- #781a78 --- */
+
+
+
+
+
+
+/* ------------------------------------------- Zoom ------------------------------------------- */
+
+.imgzoomlarge	{transition: transform .1s;}
+
+.imgzoomlarge:hover	{transform: scale(1.1);}
+
+.imgzoomsmall	{transition: transform .1s;}
+
+.imgzoomsmall:hover	{transform: scale(1.03);}
+
+
+/* ------------------------------------------- Font ------------------------------------------- */
+.textlarge	{font-size: 5vw;
+		color: white;
+		line-height: 20%;
+		font-family: rakkas;
+		text-shadow:
+   		-2px -2px 0 #000,
+    		2px -2px 0 #000,
+    		-2px 2px 0 #000,
+    		2px 2px 0 #000;}
+
+.textmedium	{font-size: 2.1vw;
+		color: white;
+		line-height: 0%;}
+
+.textmediumsmall	{font-size: 2vw;
+			color: white;}
+
+.textsmall	{font-size: 2.25vw;
+		color: white;}
+
+.textextrasmall {font-size: 1.25vw;
+	color: white;}
+
+
+
+
+
+.linkmediumsmall	{font-size: 3vh;
+			color: white;
+			text-decoration: none;}
+
+
+
+
+.hide { display: none; }
+.pink { background-color: #400040;  color: white; }
+b, span { cursor: pointer; }
