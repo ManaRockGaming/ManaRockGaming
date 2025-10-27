@@ -2,139 +2,198 @@
 <html>
 <head>
 <meta charset="utf-8"/>
+<link rel="icon" href="Images/Photo - Merlin Wizard.png">
 <title>Mana Rock Gaming</title>
 <link rel="stylesheet" type="text/css" href="manarockcss.css" />
+<style>
+
+	/*#region INPUT FORM SECTION*/
+		.inputForm {
+			margin: 0% 0%;  
+			padding: 0%; 
+			text-align: center;}
+		
+			.inputForm table {
+				width: 100%;}
+
+			.inputForm td {
+				border: none; 
+				padding: 1% 2%; 
+				font-size:1.5vw; 
+				text-align: left;
+				color: white;}
+
+			.inputForm .inputFormInput {
+				width:100%; 
+				height:10%; 
+				font-size:1.5vw; 
+				border: 3px solid #000000;
+				border-radius: 0px;}
+
+			.inputFormButton {
+				background-color: white; 
+				color: black; 
+				font-size: 1vw; 
+				font-family: FuturaDisplay; 
+				border: 0.3vw solid black; 
+				padding: 0.8vw 1.3vw; 
+				margin: 0px 0.5vw;
+				border-radius: 0px; 
+				cursor: pointer; 
+				display: none;}
+
+			.inputFormButton:hover { 
+				background-color: #400040; 
+				color: white;}
+
+			.inputFormThanks {
+				margin: 0% 10% 0% 10%; 
+				border: none; padding: 0px; 
+				font-family: FuturaDisplay; 
+				text-align: center; 
+				font-size: 2.5vw; 
+				font-style: italic;}
+			
+			.inputFormThanks2 {
+				margin: 0% 10% 0% 10%; 
+				border: none; padding: 0px; 
+				font-family: FuturaDisplay; 
+				text-align: center; 
+				font-size: 1.5vw; 
+				font-style: italic;}
+
+			.inputFormThanks div {
+				width: 100%;}
+</style>
 </head>
 <body>
 
 
-<!-- ---------------------------------------------------------------- Top Navigation & Image ---------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------- TOP NAVIGATION & IMAGE ---------------------------------------------------------------- -->
 <navigation>	
 
-	<!-- Mana Rock Gaming Logo-->
-	<div class="topnavlogo"><img src="images/LogoManaRock.png" width="30%" height="auto" alt="Mana Rock Gaming Logo"></div>
+	<!-- MANA ROCK GAMING LOGO-->
+	<div class="topNavLogo"><img src="Images/Logo - Mana Rock Gaming.png" alt="Logo of Mana Rock Gaming"></div>
+	<div class="topNavPlaceholder"></div>
 
-	<!-- Navigation Bar-->
-	<table class="topnav" style="text-align: center;">
-		<tr>
-			<td style="width: 50%;"><a href="index.html">Home Page</a></td>
-			<td  style="width: 50%;"><a href="aboutus.html">About Us</a></td>
-		</tr>
-	</table>	
+	<!-- NAVIGATION BAR
+		<table class="topNav" style="text-align: center; border-bottom: 2px solid white;">
+			<tr>
+				<td style="width: 25%;"><a href="index.html">Home Page</a></td>
+				<td  style="width: 25%;"><a href="aboutus.html">Kershaw Programmers</a></td>
+				<td  style="width: 25%;"><a href="aboutus.html">Biography</a></td>
+			</tr>
+		</table>
+	-->
 
-	<hr>
 </navigation>
 
-<!-- Character Collection Image-->	
-<img src="images/ManaRockCharacterCollection.png" width="100%" height="100%" alt="Collection of Mana Rock Gaming Characters">
+<!-- ---------------------------------------------------------------- WINDOW CONTAINER ---------------------------------------------------------------- -->	
+<div id="windowContainer">
+	<!-- <div id="controls"><button id="showAllBtn">Show All Boxes</button></div> -->
+
+	<img src="Images/Photo - Map of Kershaw.png" style="position: absolute; width: 40%; height: auto; left:0%; top:0%;" draggable="false" alt="Kershaw County">
+	<img src="Images/Photo - Merlin Wizard.png" style="position: absolute; width: 30%; height: auto; left:0%; top:0%;" draggable="false" alt="Merlin the Wizard">
+	
 
 
+	<!-- SYLLABUS -->
+	<div class="windowPopup" style="width: 10%; height: auto; max-height: 30vh; left:37%; top:70%;">Syllabus
+    	<!-- <button class="close-btn">✖</button> -->
+		<a href="Resources/Syllabus.pdf" target="_blank"><img src="Images/PDF - Syllabus.png" style="width: 100%;" class="imgZoom"></a>
+  	</div>
 
+	
 
+	<!-- PLANNING PLAN -->
+	<div class="windowPopup" style="width: 10%; height: auto; max-height: 30vh; left:49%; top:70%;">Safety Plan
+		<a href="Resources/Planning Manual.pdf" target="_blank"><img src="Images/PDF - Planning Manual.png" style="width: 100%;" class="imgZoom"></a>
+  	</div>
 
+	<!-- POSTER -->
+  	<div class="windowPopup" style="width: 22%; height: auto; max-height: 60vh; left:37%; top:4%;">Poster
+		<img src="Images/Event - Kershaw Programmers Poster.png" style="width: 100%;" draggable="false">
+  	</div>
 
+	<!-- INTEREST FORM -->
+  	<div class="windowPopup" style="width: 35%; height: auto; max-height: 90vh; left:60%; top:4%;">Interest Form
+    	<form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSfJxotgOTrWtDhrB_0m7q8EWXbXdvFKvs_-ip11VjIptGh2sA/formResponse" method="POST"  target="hidden_iframe" onsubmit="submitted=true;">        
+        	<div class="inputForm"> 
+            	<table id="formContent">
+            	</table>
+            	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { nextForm(); }"></iframe>
+            	<div id="navButtons">
+            	    <button type="button" class="inputFormButton" id="backBtn" onclick="prevForm()" style="display:none;">&lt;Back</button>
+            	    <button type="button" class="inputFormButton" id="nextBtn" onclick="nextForm()">Next&gt</button>
+            	    <input type="submit" class="inputFormButton" id="submitBtn" value="Submit" style="display:none;">
+            	</div>
+            	</br>
+        	</div>
+    	</form>
+  	</div>
 
-					
+</div>
 
-
-<!--  ---------------------------------------------------------------- News Slide ---------------------------------------------------------------- -->
-<div class="updateslide">
-		<div id="slide">
- 			<div class="slideshow-container">
+<!--  ---------------------------------------------------------------- EVENT SLIDER ---------------------------------------------------------------- -->
+<div class="eventSlider" style="border-bottom: 2px solid white;">
+		<div id="slider">
+ 			<div class="slideshowContainer">
     			
-				<!-- New Slide Title Text-->
-				<h1 class="textlarge"><u>Latest Updates</u></h1>
+				<!-- EVENT SLIDER TITLE -->
+				<h1 class="textlarge" style="padding: 0px 10px; font-size: 4vw;"><u>A History of Nonprofit Work</u></h1>
 			
-				<!-- Slide Section 1-->
+				<!-- EVENT SLIDER - SECTION 1 -->
 				<div class="mySlides fade"> 
-					<table class="updateslidetable">
+					<table class="eventSliderTable">
 						<tr>
-							<td><a href="index.html"><img class="imgzoomlarge" src="images/UpdateBastionOfAntiquityExplore.png" width="100%" height="auto" alt="Bastion of Antiquity Explore Image"></a></td>
-							<td><a href="https://www.kershawcountylibrary.org/support/game-drive-donations/"  target="_blank" alt="Board Game Fund Header"><img class="imgzoomlarge" src="images/UpdateBoardGameFund.png" width="100%" height="auto" alt="Elgin Board Game Fund Image"></a></td>
-							<td><a href="partners.html"><img class="imgzoomlarge" src="images/UpdatePartners.png" width="100%" height="auto" alt="Our Partners Image"></a></td>
+							<td>
+								<img class="imgZoom" src="Images/Event - Kershaw Programmers Poster.png" width="100%" height="auto" alt="Photo of Kershaw Programmers' Poster">
+							</td>
+							<td>
+								<img class="imgZoom" src="Images/Event - Conor Rom Teaching Board Game Design.png" width="100%" height="auto" alt="Photo of Conor Rom Teaching Game Design">
+							</td>
+							<td>
+								<img class="imgZoom" src="Images/Event - Saint Albans Board Game Drive.png" width="100%" height="auto" alt="Photo of Saint Albans' Game Drive Poster">
+							</td>
+							<td>
+								<img class="imgZoom" src="Images/Event - Elgin Board Game Drive.png" width="100%" height="auto" alt="Photos from the Elgin Board Game Drive">
+							</td>
 						</tr>
-						<tr>	
-							<td><p class="textmedium">Bastion of Antiquity Explorer</p><p class="textsmall"><i>Mana Rock Gaming's</i> First mobile app. Explore <i>The Citadel, the Military College of South Carolina</i> to collect cadets and learn more about life at the <i>Citadel.</i></p></td>
-							<td><p class="textmedium">Elgin Board Game Drive</p><p class="textsmall"><i>Mana Rock Gaming</i> is still working with the <i>Kershaw County Library</i>, despite now being headquarterd in Charleston, to create a public board game collection at the Elgin Library.</p></td>
-							<td><p class="textmedium">Our Partners</p><p class="textsmall">A complete list of everyone organization <i>Mana Rock Gaming</i> has worked with, to help complete our mission to make "South Carolina the Gaming Capital of America".</p></td>
+						<tr>
+							<td>
+								<h2 class="priorEventsH2">Kershaw Programming Class</h2>
+								<p class="priorEventsP">Winter 2026</p>
+							</td>
+							<td>
+								<h2 class="priorEventsH2">Citadel Merit Badge University</h2>
+								<p class="priorEventsP">Spring 2025</p>
+							</td>
+							<td>
+								<h2 class="priorEventsH2">St. Alban's Board Game Drive</h2>
+								<p class="priorEventsP">Fall 2023</p>
+							</td>
+							<td>
+								<h2 class="priorEventsH2">Elgin Library's Board Game Drive</h2>
+								<p class="priorEventsP">Summer 2021</p>
+							</td>
 						</tr>
 					</table>			
 				</div>
 
-				<!-- Slide Section 2-->
-    			<div class="mySlides fade"> 
-					<table class="updateslidetable">
-						<tr>
-							<td><a href="index.html"><img class="imgzoomlarge" src="images/UpdateBastionOfAntiquityExplore.png" width="100%" height="auto" alt="Bastion of Antiquity Explore Image"></a></td>
-							<td><a href="https://www.kershawcountylibrary.org/support/game-drive-donations/"  target="_blank" alt="Board Game Fund Header"><img class="imgzoomlarge" src="images/UpdateBoardGameFund.png" width="100%" height="auto" alt="Elgin Board Game Fund Image"></a></td>
-							<td><a href="partners.html"><img class="imgzoomlarge" src="images/UpdatePartners.png" width="100%" height="auto" alt="Our Partners Image"></a></td>
-						</tr>
-						<tr>	
-							<td><p class="textmedium">Bastion of Antiquity Explorer</p><p class="textsmall"><i>Mana Rock Gaming's</i> First mobile app. Explore <i>The Citadel, the Military College of South Carolina</i> to collect cadets and learn more about life at the <i>Citadel.</i></p></td>
-							<td><p class="textmedium">Elgin Board Game Drive</p><p class="textsmall"><i>Mana Rock Gaming</i> is still working with the <i>Kershaw County Library</i>, despite now being headquarterd in Charleston, to create a public board game collection at the Elgin Library.</p></td>
-							<td><p class="textmedium">Our Partners</p><p class="textsmall">A complete list of everyone organization <i>Mana Rock Gaming</i> has worked with, to help complete our mission to make "South Carolina the Gaming Capital of America".</p></td>
-						</tr>
-					</table>			
-				</div>
-
-				<!-- Switch To Next Section-->
+				<!-- SLIDER DOTS-->
 				<br>
   				<div style="text-align: center">
-  					<span class="slidedot" onclick="currentSlide(1)"></span> 
-  					<span class="slidedot" onclick="currentSlide(2)"></span> 
+  					<span class="slideDot" onclick="currentSlide(1)"></span> 
+  					<!-- <span class="slidedot" onclick="currentSlide(2)"></span> -->
 				</div>
 			</div>
   		</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--  ---------------------------------------------------------------- Top News & Social Links ---------------------------------------------------------------- -->
-<div>
-		<table class="topnews" style="padding: 10px 0px;">
-			<tr>
-				<!-- Top News-->
-				<td style="width: 65%; text-align: center;">
-					<h1 class="textlarge"><u>Top News</u></h1>
-					<a href="https://www.kershawcountylibrary.org/support/game-drive-donations/"  target="_blank"><img class="imgzoomsmall" src="images/UpdateBoardGameFund.png" width="90%" height="auto" alt="Elgin Board Game Fund Image"></a>
-				</td>
-
-				<!-- Social Links -->
-				<td style="width: 30%; background-color: #400040; text-align: center;">
-					<h1 class="textlarge"><u>Social Media</u></h1>
-					<a href="https://twitter.com/ManaRockGaming" target="_blank"><img class="imgzoomsmall" src="images/ButtonTwitter.png" width="80%" height="auto" alt="Twitter Link"></a>
-					<a href="https://www.youtube.com/channel/UCJdBTibwfTiQxlsAMNo3Wzw" target="_blank"><img class="imgzoomsmall" src="images/ButtonYoutube.png" width="80%" height="auto" alt="Youtube Link"></a>
-				</td>
-			</tr>		
-		</table>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ---------------------------------------------------------------- Calendar ---------------------------------------------------------------- -->
-<div class="calendar" style="background-color: #781a78">
-		<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23781a78&amp;ctz=America%2FNew_York&amp;src=bWw3YTFkaDRyb2dzazU5ODVtczJ2cmxpYTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showDate=1" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe></td>
+<!-- ---------------------------------------------------------------- CALENDAR ---------------------------------------------------------------- -->
+<div class="calendar">
+	<h1>Calendar</h1>	
+	<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23781a78&amp;ctz=America%2FNew_York&amp;src=bWw3YTFkaDRyb2dzazU5ODVtczJ2cmxpYTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showDate=1" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe></td>
 </div>
 
 
@@ -148,36 +207,23 @@
 <!--  ---------------------------------------------------------------- Footer ---------------------------------------------------------------- -->
 <footer>
 	<div class="footer">
-		<table class="footertable">
-			<tr>
-				<td>
-					<img src="images/LogoManaRock.png" width="100%" height="auto" alt="Mana Rock Gaming Logo">
-					<p class="textextrasmall">manarockgaming@gmail.com | Copyright @2021 | All Right Reserved | Website Programmed By Conor Rom</p>
-				</td>
-
-				<td>
-					<h1 class="textlarge"><u>Top Updates</u></h1>
-					<a href="https://www.kershawcountylibrary.org/support/game-drive-donations/"  target="_blank" alt="Board Game Fund Image"><img class="imgzoomlarge" src="images/UpdateBoardGameFund.png" width="49%" height="auto" alt="Elgin Board Game Fund Image"></a>
-					<a href="partners.html"><img class="imgzoomlarge" src="images/UpdatePartners.png" width="49%" height="auto" alt="Our Partners Image"></a>
-				</td>
-				
-				<td>
-					<h1 class="textlarge"><u>Social</u></h1>
-					<a href="https://twitter.com/ManaRockGaming" target="_blank"><img class="imgzoomlarge" src="images/ButtonTwitter.png" width="50%" height="auto" alt="Twitter Link"></a>
-					<a href="https://www.youtube.com/channel/UCJdBTibwfTiQxlsAMNo3Wzw" target="_blank"><img class="imgzoomlarge" src="images/ButtonYoutube.png" width="50%" height="auto" alt="Youtube Link"></a>
-				</td>
-
-			</tr>
-		</table>
-
-		</br>
-		<hr style="color: white">			
-
 		<table>
 			<tr>
-				<td><a href="aboutus.html"><img class="imgzoomsmall" style="width: 50%;" src="images/ButtonAboutUs.png" width="100%" height="auto" alt="About Us Link"></a></td>
-				<td><a href="mailto:manarockgaming@gmail.com"><img class="imgzoomsmall" style="width: 50%;" src="images/ButtonContactUs.png" width="100%" height="auto" alt="Contact Us Link"></a></td>
-				<td><a href="https://www.kershawcountylibrary.org/support/game-drive-donations/" target="_blank"><img class="imgzoomsmall" style="width: 50%;" src="images/ButtonDonate.png" width="100%" height="auto" alt="Board Game Fund Donate Link"></a></td>
+				<td rowspan="2">
+					<img src="Images/Logo - Mana Rock Gaming.png" width="100%" height="auto" alt="Logo of Mana Rock Gaming">
+					<div class="animatedLink"><p class="textextrasmall">ManaRockGaming@gmail.com | Copyright @2021 | All Rights Reserved | Website Programmed By <a href="https://www.instagram.com/ConorXRom/" target="_blank">Conor X. Rom</a></p></div>
+				</td>
+				<td colspan="5">
+					<h1 class="textlarge" style="font-size: 3vw;"><u>Resources</u></h1>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%;">
+					<a href="Resources/Planning Manual.pdf" target="_blank"><img src="Images/PDF - Planning Manual.png" class="imgZoom" style="width: 100%;"></a>
+				</td>
+				<td style="width: 20%;">
+					<a href="Resources/Syllabus.pdf" target="_blank"><img src="Images/PDF - Syllabus.png" class="imgZoom" style="width: 100%;"></a>
+				</td>
 			</tr>
 		</table>
 	</div>
@@ -205,7 +251,7 @@
 
 
 
-
+<!-- SCRIPT - EVENT SLIDER-->
 <script>
 	var slideIndex = 0;
 	showSlides();
@@ -246,8 +292,216 @@
 	}
 </script>
 
-<!-- Extra Reference Links-->
-<!-- https://www.kershawcountylibrary.org/spring-2021-in-the-know-magazine/ -->
-							
+<!-- SCRIPT - INTERST FORM-->
+<script src="jquery-3.7.1.min.js"></script>
+<script type="text/javascript">
+    var submitted = false;
+    var currentSet = 0;
+    var loadedSets = [];
+
+    var questionSets = [
+            // First Set
+            `
+            <tr>
+                <td colspan="2" style="text-align: center; font-size: 2vw;">
+                    <b>Kershaw County's Youth Video Game Programmers</b>
+					</br><span style="font-weight: bold; font-size: 1.5vw;">Interest Form</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    First Name:<br>
+                    <input type="text" name="entry.420114725" class="inputFormInput">
+                </td>
+                <td style="width: 50%;">
+                    Last Name:<br>
+                    <input type="text" name="entry.195689374" class="inputFormInput">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Birthday:<br>
+                    <input type="text" name="entry.597069611" class="inputFormInput" placeholder="MM/DD/YY">
+                </td>
+				
+				<td style="width: 50%;">
+                    Age:<br>
+                    <input type="text" name="entry.391508206" class="inputFormInput">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Education:<br>
+                    <select name="entry.1362834977" class="inputFormInput">
+						<option value="Not Selected">Not Selected</option>
+						<option value="Elgin-Lugoff High">Elgin-Lugoff High</option>
+						<option value="Camden High">Camden High School</option>
+						<option value="North Central High">North Central High School</option>
+						<option value="Religious School">Religious School</option>
+						<option value="Home Schooled">Home Schooled</option>
+						<option value="HS Graduate">HS Graduate</option>
+						<option value="College Student">College Student</option>
+						<option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Email:<br>
+                    <input type="text" name="entry.1743449712" class="inputFormInput">
+                </td>
+            </tr>
+			<tr>
+                <td colspan="2">
+                    Phone:<br>
+                    <input type="text" name="entry.204935541" class="inputFormInput">
+                </td>
+            </tr>
+            `,
+            // Second Set
+            `
+            
+			<tr>
+                <td colspan="2" style="text-align: center; font-size: 2vw;">
+                    <b>Kershaw County's Youth Video Game Programmers</b>
+					</br><span style="font-weight: bold; font-size: 1.5vw;">Interest Form</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    Parent's First Name:<span style="color: red;">*</span><br>
+                    <input type="text" name="entry.626723676" class="inputFormInput">
+                </td>
+                <td style="width: 50%;">
+                    Parent's Last Name:<span style="color: red;">*</span><br>
+                    <input type="text" name="entry.477022824" class="inputFormInput">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Parent's Email:<span style="color: red;">*</span><br>
+                    <input type="text" name="entry.182815481" class="inputFormInput">
+                </td>
+            </tr>
+			<tr>
+                <td colspan="2">
+                    Parent's Phone:<span style="color: red;">*</span><br>
+                    <input type="text" name="entry.374310563" class="inputFormInput">
+                </td>
+            </tr>
+			<tr>
+                <td colspan="2">
+                    Any Medical Things We Need To Know:<br>
+					<textarea name="entry.1985300739" class="inputFormInput" style="resize: none;" rows="3"></textarea>
+                </td>
+            </tr>
+			<tr>
+				<td colspan="2">
+					<span style="color: red;">*</span> = Required If Under The Age of 18	
+				</td>
+			</tr>
+            `,
+        ];
+
+    function updateForm() {
+        // Inject the set if not already added
+        if (!loadedSets.includes(currentSet)) {
+            const wrappedHtml = `<tbody class="formStep" id="formStep${currentSet}">${questionSets[currentSet]}</tbody>`;
+            $("#formContent").append(wrappedHtml);
+            loadedSets.push(currentSet);}
+
+            // Hide all sets
+            $(".formStep").hide();
+
+            // Show current set
+            $(`#formStep${currentSet}`).show();
+
+            // Toggle nav buttons
+            $("#backBtn").toggle(currentSet > 0);
+            $("#nextBtn").toggle(currentSet < questionSets.length - 1);
+            $("#submitBtn").toggle(currentSet === questionSets.length - 1);
+        }
+
+        function nextForm() {
+            if (currentSet < questionSets.length - 1) {
+                currentSet++;
+                updateForm();
+            }
+        }
+
+        function prevForm() {
+            if (currentSet > 0) {
+                currentSet--;
+                updateForm();
+            }
+        }
+
+        $(document).ready(function () {
+            updateForm();
+	});
+</script>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(1000);
+    $('#gform').prepend(
+     '<div class="inputFormThanks">Thank You! We Will Be In Contact Shortly.</div></br><div class="inputFormThanks2">Refresh To Submit Another Form</div>'
+    );});
+</script>
+
+
+<!-- SCRIPT - DRAGGABLE WINDOWS 
+<script>
+	const container = document.getElementById('windowContainer');
+	const boxes = document.querySelectorAll('.windowPopup');
+	const showAllBtn = document.getElementById('showAllBtn');
+
+	let activeBox = null;
+	let offsetX = 0, offsetY = 0;
+
+	// drag start
+	boxes.forEach(box => {
+  		box.addEventListener('mousedown', e => {
+    	if (e.target.classList.contains('close-btn')) return; // don't drag when clicking close
+    		activeBox = box;
+    		box.classList.add('dragging');
+    		offsetX = e.offsetX;
+    		offsetY = e.offsetY;
+  		});
+
+  		// close button
+  		box.querySelector('.close-btn').addEventListener('click', () => {
+    		box.style.display = 'none';
+  		});
+	});
+
+	// drag move
+	document.addEventListener('mousemove', e => {
+  	if (!activeBox) return;
+  		const rect = container.getBoundingClientRect();
+  		let x = e.clientX - rect.left - offsetX;
+  		let y = e.clientY - rect.top - offsetY;
+  		// clamp inside container
+  		x = Math.max(0, Math.min(rect.width - activeBox.offsetWidth, x));
+  		y = Math.max(0, Math.min(rect.height - activeBox.offsetHeight, y));
+  		activeBox.style.left = x + 'px';
+  		activeBox.style.top = y + 'px';
+	});
+
+	// drag end
+	document.addEventListener('mouseup', () => {
+  	if (activeBox) activeBox.classList.remove('dragging');
+  		activeBox = null;
+	});
+
+	// reopen all
+	showAllBtn.addEventListener('click', () => {
+  		boxes.forEach(box => box.style.display = 'block');
+	});
+</script>
+-->
 
 </body>
+</html>

@@ -1,65 +1,140 @@
-body	{margin: 0;
-	font-size: 0;}
+/*#region ------------------------------------------- BODY -------------------------------------------*/
+	body {
+		margin: 0;
+		font-size: 0;}
 
+	@font-face	{font-family: rakkas; src: url('rakkasregular.ttf'); } 
+	.rakkas	{font-family: rakkas; font-size: 2vh; }
 
-@font-face	{font-family: rakkas; src: url('rakkasregular.ttf'); } 
-.rakkas	{font-family: rakkas; font-size: 2vh; }
+/*#endregion BODY*/
 
-/* ------------------------------------------- Top Navigation ------------------------------------------- */
+/*#region ------------------------------------------- TOP NAVIGATION -------------------------------------------*/
 
-.topnavlogo	{width: 100%;
-		padding: 10px 0px;
+	.topNavLogo	{
+		width: 100%;
+		padding: 0.5% 0%;
 		background-color: black;
-		text-align: center;}
+		text-align: left;}
 
-.topnav		{width: 100%;
+	.topNavLogo img {
+		width: 30%; 
+		height: auto;}
+
+	.topNavPlaceholder {
+		background-color: #781a78; 
+		border-bottom: 2px solid white; 
+		width: 100%; 
+		height: 3vh;}
+
+	.topNav {
+		width: 100%;
 		table-layout: fixed;
 		background-color: #400040;
 		text-align: center;}
 
-.topnav a	{text-decoration: none;
+	.topNav a {
+		text-decoration: none;
 		font-size: 6vh;
 		color: white;
 		font-family: rakkas;
 		text-shadow:
    		-2px -2px 0 #000,
-    		2px -2px 0 #000,
-    		-2px 2px 0 #000,
-    		2px 2px 0 #000;}
+    	2px -2px 0 #000,
+    	-2px 2px 0 #000,
+    	2px 2px 0 #000;}
 
-.topnav a:hover	{background-color: #781a78;
+	.topNav a:hover	{
+		background-color: #781a78;
 		color: black;
 		text-shadow:
    		0px 0px 0 #000,
-    		2px 0px 0 #000,
-    		0px 0px 0 #000,
-    		0px 0px 0 #000;}
-		
-/* ------------------------------------------- Update Slide ------------------------------------------- */
+    	2px 0px 0 #000,
+    	0px 0px 0 #000,
+    	0px 0px 0 #000;}
+			
+/*#endregion TOP NAVIGATION*/
 
-.updateslide	{table-layout: fixed;
+/*#region ------------------------------------------- WINDOW CONTAINER -------------------------------------------*/
+
+	#windowContainer {
+    	position: relative;
+		background-image: linear-gradient(rgba(192, 1, 106, 0.8),rgba(51, 0, 36, 0.8)), url('');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		aspect-ratio: 16 / 7;
+		max-height: 90vh;
+		width: 100%;
+    	overflow: auto;
+		border-bottom: 2px solid white;}
+
+  	.windowPopup {
+    	position: absolute;
+    	background: #781a78;
+    	border: 1vh solid #000000;
+    	cursor: grab;
+    	padding: 1vh;
+    	box-sizing: border-box;
+		color: white;
+  		font-family: Arial, sans-serif;
+    	z-index: 10;
+		}
+
+	.windowPopup p {
+  		margin: 0 0 0.6em 0;
+  		line-height: 1.3;
+  		color: inherit;
+  		font-size: 1rem;}
+
+/*#endregion WINDOW CONTAINER*/
+
+/*#region ------------------------------------------- EVENT SLIDER -------------------------------------------*/
+
+	.eventSlider {
+		table-layout: fixed;
 		width: 100%;
 		background-color: #400040;
 		color: white;
 		font-size: 2.25vh;}
 
-.updateslidetable	{table-layout: fixed;
-			width: 100%;}
+	.eventSliderTable {
+		table-layout: fixed;
+		width: 100%;}
 
-.updateslidetable td	{padding: 0px 10px;
-			width: 33%;
-			vertical-align: top;}
+	.eventSliderTable td {
+		padding: 0px 10px;
+		width: 33%;
+		vertical-align: top;}
 
-#slide	{width:100%;}	
-* {box-sizing: border-box}
-.mySlides {display: none}
+	#slider	{width:100%;}	
+	* {box-sizing: border-box}
 
+	.mySlides {display: none}
 
-.slideshow-container	{padding: 10px 10px;
-			width: 100%;}
+	.slideshowContainer {
+		padding: 10px 10px;
+		width: 100%;}
 
-/* Slideshow Dots/Indicators */
-.slidedot	{cursor: pointer;
+	.imgZoom	{transition: transform .1s;}
+
+	.imgZoom:hover	{transform: scale(1.1);}
+	
+	.priorEventsH2 {
+		font-size: 2.1vw;
+		color: white;	
+		margin-top: 0.1em;
+  		margin-bottom: 0.1em;	
+		text-align: center;}
+
+	.priorEventsP {
+		font-size: 1.75vw;
+		color: white;	
+		margin-top: 0.1em;
+  		margin-bottom: 0.1em;	
+		text-align: center;}
+
+	/* Slideshow Dots/Indicators */
+	.slideDot	{cursor: pointer;
 		height: 13px;
 		width: 13px;
 		margin: 0 2px;
@@ -68,95 +143,95 @@ body	{margin: 0;
 		display: inline-block;
 		transition: background-color 0.6s ease;}
 
-/* Slideshow Active Dots/Indicators */
-.active, .dot:hover	{background-color: #717171;}
+	/* Slideshow Active Dots/Indicators */
+	.active, .dot:hover	{background-color: #717171;}
 
-/* Slideshow Animation */
-.fade	{-webkit-animation-name: fade;
-	-webkit-animation-duration: 2s;
-	animation-name: fade;
-	animation-duration: 2s;}
+	/* Slideshow Animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 2s;
+		animation-name: fade;
+		animation-duration: 2s;}
         
-@-webkit-keyframes fade	{from {opacity: .4}	to {opacity: 1}}
+	@-webkit-keyframes fade	{from {opacity: .4}	to {opacity: 1}}
 
-@keyframes fade {from {opacity: .4}	to {opacity: 1}}
+	@keyframes fade {from {opacity: .4}	to {opacity: 1}}
 
-/* On Smaller Screens, Decrease Text Size */
-@media only screen and (max-width: 300px)	{.text {font-size: 11px}}
+	/* On Smaller Screens, Decrease Text Size */
+	@media only screen and (max-width: 300px)	{.text {font-size: 11px}}
 
-/* ------------------------------------------- Top News & Social Slide ------------------------------------------- */
+/*#endregion EVENT SLIDER*/
 
-.topnews	{width: 100%;
-		background-color: #781a78;
-		font-size: 2.25vh;}
+/*#region ------------------------------------------- CALENDAR -------------------------------------------*/
 
-.topnews td	{padding: 0px 10px;
-		vertical-align: top;}
+	.calendar	{
+		padding: 1% 1%;
+		background-color: #781a78; 
+		border-bottom: 2px solid white;}
 
-/* ------------------------------------------- Calendar ------------------------------------------- */
-
-.calendar	{padding: 10px 10px;}
-
-
-/* ------------------------------------------- Footer ------------------------------------------- */
-
-.footer	{width: 100%;
-	padding: 0px 10px;
-	background-color: black;
-	color: white;
-	font-size: 2.25vh;}
-
-.footertable	{table-layout: fixed;
-		width: 100%;}
-
-.footertable td	{padding: 0px 10px;
-		width: 33%;
-		vertical-align: top;
-		text-align: center;}
-
-
-
-
-
-.aboutusbody	{padding: 10px 40px;
-		width: 100%;
-		background-color: #781a78;}
-		
-/* --- #781a78 --- */
-
-
-
-
-
-
-/* ------------------------------------------- Zoom ------------------------------------------- */
-
-.imgzoomlarge	{transition: transform .1s;}
-
-.imgzoomlarge:hover	{transform: scale(1.1);}
-
-.imgzoomsmall	{transition: transform .1s;}
-
-.imgzoomsmall:hover	{transform: scale(1.03);}
-
-
-/* ------------------------------------------- Font ------------------------------------------- */
-.textlarge	{font-size: 5vw;
+	.calendar h1 {
+		font-size: 4vw;
 		color: white;
 		line-height: 20%;
 		font-family: rakkas;
 		text-shadow:
    		-2px -2px 0 #000,
-    		2px -2px 0 #000,
-    		-2px 2px 0 #000,
-    		2px 2px 0 #000;}
+    	2px -2px 0 #000,
+    	-2px 2px 0 #000,
+    	2px 2px 0 #000;
+		text-decoration: underline;}
+
+/*#endregion CALENDAR*/
+
+/*#region ------------------------------------------- FOOTER -------------------------------------------*/
+
+	.footer	{
+		width: 100%;
+		padding: 0px 10px;
+		background-color: black;
+		color: white;
+		font-size: 2.25vh;}
+
+	.footer table{
+		table-layout: fixed;
+		width: 100%;}
+
+	.footer table td {
+		padding: 0px 10px;
+		width: 33%;
+		vertical-align: top;
+		text-align: center;}
+
+/*#endregion FOOTER*/
+
+
+
+
+
+
+
+/* ------------------------------------------- Font ------------------------------------------- */
+.textlarge	{font-size: 4vw;
+		color: white;
+		line-height: 20%;
+		font-family: rakkas;
+		text-shadow:
+   		-2px -2px 0 #000,
+    	2px -2px 0 #000,
+    	-2px 2px 0 #000,
+    	2px 2px 0 #000;}
 
 .textmedium	{font-size: 2.1vw;
 		color: white;
-		line-height: 0%;}
+		margin-top: 0.1em;
+  		margin-bottom: 0.1em;	
+		text-align: center;
+		}
 
 .textmediumsmall	{font-size: 2vw;
-			color: white;}
+			color: white;
+			
+			}
 
 .textsmall	{font-size: 2.25vw;
 		color: white;}
@@ -175,6 +250,21 @@ body	{margin: 0;
 
 
 
-.hide { display: none; }
-.pink { background-color: #400040;  color: white; }
-b, span { cursor: pointer; }
+
+
+
+
+.animatedLink a {position: relative; font-family: Times New Roman; color: white; text-decoration: none;}
+	.animatedLink a::after {content: "";
+    		position: absolute;
+    		left: 0;
+    		right: 0;
+    		bottom: 0px;
+    		height: 1.5px;
+    		background: white;
+    		transform: scaleX(0);
+    		transform-origin: center;
+    		transition: transform 0.3s ease;}
+	.animatedLink a:hover::after {transform: scaleX(1);}
+
+	
