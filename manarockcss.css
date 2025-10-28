@@ -63,7 +63,7 @@
 		background-repeat: no-repeat;
 		background-position: 50% 40%;
 		aspect-ratio: 16 / 8;
-		max-height: 92vh;
+		max-height: 94vh;
 		width: 100%;
     	overflow: auto;
 		border-bottom: 2px solid white;}
@@ -93,7 +93,7 @@
 		width: 10%; 
 		height: auto;
 		max-height: 30vh;
-		top: 70%;
+		top: 69%;
 		}
 
 	@media (max-width: 926px) {
