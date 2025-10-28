@@ -79,6 +79,26 @@
   		font-family: Arial, sans-serif;
     	z-index: 10;
 		}
+	
+	.windowPopupPDF {
+    	position: absolute;
+    	background: #781a78;
+    	/*cursor: grab;*/
+		border: 1vh solid #000000;
+    	padding: 0.3em;
+    	box-sizing: border-box;
+		color: white;
+  		font-family: Arial, sans-serif;
+    	z-index: 10;
+		width: 10%; 
+		height: auto;
+		max-height: 30vh;
+		top: 70%;
+		}
+
+	@media (max-width: 800px) {
+  		.windowPopupPDF {
+    		top: 62%;}}
 
 	.windowPopup p {
   		margin: 0 0 0.6em 0;
@@ -135,8 +155,8 @@
 
 	/* Slideshow Dots/Indicators */
 	.slideDot	{cursor: pointer;
-		height: 1.5vw;
-		width: 1.5vw;
+		height: 1.4vw;
+		width: 1.4vw;
 		margin: 0 2px;
 		background-color: #bbb;
 		border-radius: 50%;
@@ -159,6 +179,10 @@
 
 	/* On Smaller Screens, Decrease Text Size */
 	@media only screen and (max-width: 300px)	{.text {font-size: 11px}}
+
+
+	
+
 
 /*#endregion EVENT SLIDER*/
 
