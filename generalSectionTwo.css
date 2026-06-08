@@ -1,0 +1,91 @@
+/* SECTION TWO */
+	.sectionTwo {
+		padding: 3.5% 0%;
+    	background-color: #CFA7C1;}
+
+	.sectionTwoContent {
+		margin: 0 10%;}
+
+	.sectionTwo h1 {font-size: 2vw;}
+    .sectionTwo li {font-size: 1.5vw;}
+
+	.sectionTwoTable {
+    	width: 100%;
+		
+	
+		border-collapse: separate;
+    	border-spacing: clamp(0.5rem, 2vw, 1.5rem);
+		text-align: center;
+		}
+
+	.sectionTwoTable th {
+		text-align: center;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #CFA7C1;
+		border: none;
+		box-shadow: inset 0 0 0 2px #400040;
+		
+		}
+
+	.sectionTwoTable td {
+		width: 33.33%;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #CFA7C1;
+		border: none;
+		border-radius: 4px;
+		box-shadow: inset 0 0 0 2px #400040;}
+
+	.sectionTwoTable th h1 {
+		font-size: 3vw;
+	}
+
+	.sectionTwoTable td h1 {
+		margin-bottom: 2%;}
+
+	.sectionTwoTable td li {
+		margin-left: 1.5rem;}
+
+	
+
+
+/* ISSUES */
+
+	.issuesSectionTwoTable {
+    	width: 100%;
+		border-collapse: separate;
+    	border-spacing: clamp(0.5rem, 2vw, 1.5rem);}
+
+	.issuesSectionTwoTable th {
+		text-align: center;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #CFA7C1;
+		border: none;
+		box-shadow: inset 0 0 0 2px #400040;}
+
+	.issuesSectionTwoTable td {
+		width: 50%;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #CFA7C1;
+		border: none;
+		border-radius: 4px;
+		box-shadow: inset 0 0 0 2px #400040;}
+
+	.issuesSectionTwoTable th h1 {
+		font-size: 3vw;
+	}
+
+	.issuesSectionTwoTable td h1 {
+		margin-bottom: 2%;}
+
+	.issuesSectionTwoTable td li {
+		margin-left: 1.5rem;}
+
+	

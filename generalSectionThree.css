@@ -1,0 +1,65 @@
+/* SECTION THREE */
+	.sectionThree {
+		padding: 3.5% 0%;
+    	background-image: linear-gradient(rgba(64, 0, 64, 0.5), rgba(64, 0, 64, 0.5)), url('Images/Photo - Background Collection.png');
+		background-size: cover;
+   		background-position: center;
+    	background-repeat: no-repeat;
+		box-sizing: border-box;}
+
+	.sectionThreeContent {
+		display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+		margin: 0 10%;}
+
+
+	.sectionThreeLeftSide {
+		width: 60%;
+		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+		border-radius: 4px;
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
+
+	.sectionThreeRightSide {
+    	width: 40%;}
+
+
+/*#region INPUT FORM SECTION*/
+	.inputForm {border: none; font-family: FuturaDisplay; text-align: center; background-color: #400040; width: 100%;}
+		.inputForm table {width: 100%;
+    table-layout: auto; }
+	
+		.inputForm th {font-size: 3vw; color: white;}
+		.inputForm td h1 {font-size: 1.5vw; color: white;}
+	
+		.inputForm td {padding: 1% 3%;
+    		text-align: left;
+    		word-wrap: break-word;
+    		box-sizing: border-box;}
+		.inputForm .inputFormInput {width: 100%;
+    		height: 10%;
+    		font-size: 1.25vw;
+
+    		box-sizing: border-box;  /* CRITICAL FIX */
+    		display: block;
+			border-radius: 10px;}
+
+		#navButtons .inputFormButton {
+    	margin-top: 0.5em;  /* adds a small gap from above */
+		margin-bottom: 0.5em;
+		}
+
+		.inputFormButton {
+			background-color: white;
+    color: black;
+     font-size: clamp(12px, 1vw, 16px);
+    border: 2px solid black;
+    padding: 0.5em 1em;    /* scales naturally with text size */
+    border-radius: 0px;
+    cursor: pointer;
+    display: none;
+	margin: 0px;
+}.inputFormButton:hover { background-color: #400040; color: white;}
+
+		.inputFormThanks {margin: 0% 10% 0% 10%; border: none; padding: 0% 1%; font-family: FuturaDisplay; text-align: center; font-size: 2vw; font-style: italic; color: white;}
+

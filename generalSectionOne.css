@@ -1,0 +1,98 @@
+/* SECTION ONE */
+    .sectionOne {
+    	padding: 3.5% 0%;
+		background-color: #E3CCD9;
+    	}
+
+	.sectionOneContent {
+		display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+		margin: 0 10%;
+		}
+
+    .sectionOne h1 {font-size: 3vw; margin-bottom: 1vw;}
+    .sectionOne p {font-size: 2vw; margin-bottom: 1vw;}
+
+	.sectionOneLeftSide {
+    	width: 30%;
+    	display: flex;
+    	justify-content: center;}
+
+	.sectionOneRightSide {
+    	width: 60%;}
+
+	.pictureFramedVideo {
+  		width: 100%;
+  		height: auto;
+  		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+  		background: white;
+  		border-radius: 4px;
+		transform: rotate(-6deg);
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
+
+
+/* BIOGRAPHY */
+
+.biographySectionOneContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	margin: 0 10%;
+}
+
+
+
+.biographySectionOneLeftSide {
+    width: 60%; /* text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.biographySectionOneRightSide {
+    width: 30%; /* video */
+    display: flex;
+    justify-content: center;
+}
+
+.biographyPictureFramedVideo {
+    width: 100%;
+  		height: auto;
+  		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+  		background: white;
+  		border-radius: 4px;
+		transform: rotate(-6deg);
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);
+}
+
+
+.biographySectionOneRightSidePage {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+
+.biographyPictureFramedVideoPage {
+    width: 100%;
+  		height: auto;
+  		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+  		background: white;
+  		border-radius: 4px;
+		transform: rotate(-6deg);
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);
+}
+
+.biographyPictureFramedVideoPage:nth-child(1) {
+	transform: rotate(6deg) scale(0.95);
+}
+
+
+.biographyPictureFramedVideoPage:nth-child(3) {
+    transform: rotate(6deg) scale(0.95);
+}

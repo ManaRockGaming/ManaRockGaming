@@ -1,0 +1,92 @@
+/* HOMEPAGE HEADER */
+	.homepageHeader {
+    	position: relative;
+    	overflow: hidden;
+    	height: clamp(250px, 40vw, 70vh); /* key fix */           
+    	width: 100%;
+   		background: linear-gradient(to bottom, rgba(51, 0, 36, 0.8) 0%, rgba(51, 0, 36, 0.8) 0%, rgba(192, 1, 106, 0.8) 80%);}
+
+	.homepageBackground {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 20%;
+    	background: linear-gradient(to bottom, #400040 0%, #400040 20%, rgba(236, 229, 220, 0) 100%);
+    	z-index: 1;
+    	display: flex;
+    	align-items: center;
+    	padding: 0 2vw; }
+
+	.homepageHeaderCampaignImage {
+    	position: absolute;
+    	left: -10%;
+    	top: 20%;
+    	transform: translateY(-50%);
+    	height: clamp(60px, 10vw, 160px);
+    	z-index: 2;}
+
+	.homepageTrapezoid {
+    	position: absolute;
+    	top: 0;
+    	left: 45%;
+    	width: 60%;
+    	height: clamp(250px, 40vw, 85vh); /* key fix */
+    	background-image: url('Images/Photo - Header Background.png');
+   		background-position: center top 100%;
+    	background-size: cover;
+    	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+    	z-index: 0;}
+
+
+
+
+/* HOMEPAGE NAVIGATION */
+
+
+	.homepageNavigationContainer {
+    	position: absolute;
+		top: clamp(4px, 1.2vw, 20px);
+		right: 3%;
+		display: flex;
+    	flex-wrap: nowrap;
+    	justify-content: flex-end;
+    	align-items: center;
+    	gap: 2vw;
+    	width: 100%;
+		z-index: 4;}
+
+	.homepageNavigationLogo {
+		position: absolute;
+		top: 1%;
+		left: 3%;
+		z-index: 3;}
+		
+/* ANIMATED LINKS */
+
+	.animatedLinkNavigation a {
+		text-decoration: none;
+    	color: white;
+    	display: inline-block;
+    	position: relative;
+		font-size: 1.5vw;}
+		
+	
+	.animatedLinkNavigation a::after {
+		content: "";
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0px;
+    	height: 1.5px;
+    	background: white;
+    	transform: scaleX(0);
+    	transform-origin: center;
+    	transition: transform 0.3s ease;}
+
+	.animatedLinkNavigation a:hover::after {
+		transform: scaleX(1);}
+
+
+	.animatedLinkNavigation a.active::after {
+    	transform: scaleX(1);}

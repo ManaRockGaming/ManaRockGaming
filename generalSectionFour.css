@@ -1,0 +1,46 @@
+	.sectionFour {
+    	padding: 3.5% 0%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	background-color: #CFA7C1;}
+
+	.sectionFourContent {
+		margin: 0 10%;}
+
+	.sectionFour h1 {font-size: 2vw;}
+	.sectionFour p {font-size: 1.5vw;}
+
+	.sectionFourTable {
+		width: 100%;
+		border-collapse: collapse;
+		table-layout: fixed;
+		text-align: center;}
+
+	.sectionFourTable th {
+    	color: white;
+    	background-color: #400040;
+    	padding: 2.5%;
+		text-align: center;}
+
+	.sectionFourTable td {
+    	color: white;
+    	background-color: #400040;
+   		padding: 2.5%;
+		vertical-align: top;}
+
+	.sectionFourTable td h1 {
+		margin-bottom: 2%;}
+
+	.sectionFourTable tr + tr td {
+    	border-top: clamp(0.5rem, 2vw, 1.5rem) solid #CFA7C1;}
+
+	.sectionFourTable td + td {
+    	border-left: clamp(0.5rem, 2vw, 1.5rem) solid #CFA7C1;}
+
+
+
+/* VOLUNTEER ONLY */
+
+	.sectionFourTable td li {
+		margin-left: 1.5rem;}
