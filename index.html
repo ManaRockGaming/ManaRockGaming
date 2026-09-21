@@ -1,314 +1,608 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mana Rock Gaming</title>
-<link rel="icon" type="image/x-icon" href="Images/Photo - Merlin Wizard.png">
+<link rel="icon" href="Images/Mana Rock Gaming Square Logo.png" alt="Mana Rock Gaming Logo">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=[GOOGLE_ANALYTICS_ID]"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '[GOOGLE_ANALYTICS_ID]');
+</script>
 <link rel="stylesheet" type="text/css" href="general.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionHeader.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionOne.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionTwo.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionThree.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionFour.css" />
-<link rel="stylesheet" type="text/css" href="generalSectionFooter.css" />
-<style>
-</style>
 </head>
 <body>
 
-<!-- HEADER - NAVIGATION & IMAGE -->
-<header>
+<!-- nav -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="Images/Mana Rock Gaming Logo.png" alt="Mana Rock Gaming Logo">
+    <div class="nav-logo-text">
+      <div class="name">The Mana Rock Gaming Foundation</div>
+    </div>
+  </a>
+
+  <div class="nav-links">
     
+    <a href="Mission.html">
+      Our Mission
+    </a>
+
+    <a href="Leadership.html">
+      Our Leadership
+    </a>
+
+    <a href="Events.html">
+      Our Events
+    </a>
+
+    <!-- Community -->
+    <div class="nav-dropdown">
+      <a href="CommunityMap.html" class="nav-dropdown-toggle">
+        Our Community (WIP)<!--<span>▾</span>-->
+      </a>
+      <!--
+      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="CommunityMap.html">Community Map</a>
+          <a href="https://discord.gg/whxNu83RJh" target="_blank">Community Discord</a>
+          <a href="CommunityArtists.html">Community Artists</a>
+          <a href="CommunityProgrammers.html">Community Programmers</a>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <a href="Library.html">
+      Our Library (WIP)
+    </a>
+
+    <!--
+    <a href="SiegeOfCamden.html">
+      The Siege of Camden Prime
+    </a>
+    -->
+
+    <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank" class="cta">
+      Donate
+    </a>
+  </div>
+
+  <button class="hamburger"
+    onclick="document.getElementById('navOverlay').classList.add('open')"
+    aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- mobile nav -->
+<div class="nav-overlay" id="navOverlay">
+  <button class="nav-overlay-close" onclick="document.getElementById('navOverlay').classList.remove('open')">✕</button>
+  <a href="index.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+  <a href="Mission.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Mission</a>
+  <a href="Leadership.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Our Leadership</a>
+  <a href="Events.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Events</a>
+  <a href="CommunityMap.html"     onclick="document.getElementById('navOverlay').classList.remove('open')">Our Community (WIP)</a>
+  <a href="Library.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Our Library (WIP)</a>
+  <!--<a href="SiegeOfCamden.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Siege of Camden</a>-->
+  <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank"   onclick="document.getElementById('navOverlay').classList.remove('open')">Donate</a>
+</div>
+
+<!-- introduction -->
+<section class="introduction" id="Home">
+  <div class="introduction-left" style="background-image: linear-gradient(rgba(59, 10, 87, 0.70), rgba(59, 10, 87, 0.95)), url('Images/Background Collection.png'); background-size: cover; background-position: center;">
+    <div class="introduction-tag"><span class="dot"></span>For the Love of Gaming!</div>
+    <h1>Building The<br>Gaming Capital Of<br><em>America</em></h1>
+    <p class="introduction-sub" style="color: white;">Promoting public education, creativity, and community engagement in Kershaw County through the joy of gathering around a table or a screen with your friends.</p>
+    <div class="introduction-btns">
+      <a href="#Contact" class="btn btn-gold">Email Us →</a>
+      <a href="Mission.html" target="_blank" class="btn btn-ghost">Our Mission</a>
+    </div>
+    <div class="introduction-footnote" style="border-top: 1px solid white;">
+      <strong style="color: white;">In The Heart of Kershaw County!</strong><br>
+    </div>
+  </div>
+  <div class="introduction-right">
+    <a href="Mission.html">
+      <div class="stat-card red">
+        <div class="label">Life, Liberty, and an Epic Adventure!</div>
+        <div class="value">Our Mission</div>
+        <div class="desc">To spread the joy of gaming.</div>
+      </div>
+    </a>
+    <a href="Events.html">
+      <div class="stat-card blue">
+        <div class="label">Join us at an</div>
+        <div class="value">Upcoming Event</div>
+        <div class="desc">From community events to educational opportunities.</div>
+      </div>
+    </a>
+    <a href="Leadership.html">
+      <div class="stat-card gold">
+        <div class="label">The volunteers who serve on</div>
+        <div class="value">Our Board</div>
+        <div class="desc">To help our mission.</div>
+      </div>
+    </a>
+    <a href="#Contact">
+      <div class="stat-card green">
+        <div class="label">Have A Question?</div>
+        <div class="value">Contact Us</div>
+        <div class="desc">Let's connect!</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- scrolling ticker -->
+<div class="ticker">
+  <div class="ticker-inner">
+
+    <!-- SET 1 -->
+    <div class="ticker-group">
+      <span class="ticker-item"><span class="sep">🎴</span>Magic The Gathering</span>
+      <span class="ticker-item"><span class="sep">⚡</span>Pokémon</span>
+      <span class="ticker-item"><span class="sep">⚔️</span>Warhammer 40K</span>
+      <span class="ticker-item"><span class="sep">🐉</span>D&D</span>
+      <span class="ticker-item"><span class="sep">🎖️</span>Bolt Action</span>
+      <span class="ticker-item"><span class="sep">🎲</span>Board Games</span>
+      <span class="ticker-item"><span class="sep">🎮</span>Video Games</span>
+      <span class="ticker-item"><span class="sep">💻</span>Coding</span>
+      <span class="ticker-item"><span class="sep">🕹️</span>Game Development</span>
+      <span class="ticker-item"><span class="sep">🧙</span>RPGs</span>
+      <span class="ticker-item"><span class="sep">🃏</span>TCGs</span>
+      <span class="ticker-item"><span class="sep">🗺️</span>Historical Gaming</span>
+
+      <span class="ticker-item">
+        <img src="images/Eevee.gif" alt="Eevee">
+      </span>
+    </div>
+
+    <!-- SET 2 — DUPLICATE -->
+    <div class="ticker-group">
+      <span class="ticker-item"><span class="sep">🎴</span>Magic The Gathering</span>
+      <span class="ticker-item"><span class="sep">⚡</span>Pokémon</span>
+      <span class="ticker-item"><span class="sep">⚔️</span>Warhammer 40K</span>
+      <span class="ticker-item"><span class="sep">🐉</span>D&D</span>
+      <span class="ticker-item"><span class="sep">🎖️</span>Bolt Action</span>
+      <span class="ticker-item"><span class="sep">🎲</span>Board Games</span>
+      <span class="ticker-item"><span class="sep">🎮</span>Video Games</span>
+      <span class="ticker-item"><span class="sep">💻</span>Coding</span>
+      <span class="ticker-item"><span class="sep">🕹️</span>Game Development</span>
+      <span class="ticker-item"><span class="sep">🧙</span>RPGs</span>
+      <span class="ticker-item"><span class="sep">🃏</span>TCGs</span>
+      <span class="ticker-item"><span class="sep">🗺️</span>Historical Gaming</span>
+
+      <span class="ticker-item">
+        <img src="images/Eevee.gif" alt="Eevee">
+      </span>
+    </div>
+
+  </div>
+</div>
+
+<!-- our mission -->
+<section class="section light" id="Mission">
+  <div class="container">
+    <div class="origin-wrap">
+      <div>
+        <div class="origin-label">Who Are We?</div>
+        <div class="origin-big">The Mana<br>Rock Gaming<br><span>Foundation</span></div>
+      </div>
+      <div class="origin-text">
+        <p>At Mana Rock Gaming, we believe games are more than just a way to have fun, they’re a way to learn, create, explore, and bring people together.</p>
+
+        <p>Through classes, workshops, gaming events, conventions, and community programs, we bring education and play together. Our programs encourage creativity, teamwork, problem-solving, computer science, game development, history, and much more.</p>
+
+        <p>Whether you're rolling dice, painting an army, writing your first line of code, designing a game, or exploring history through a tabletop battlefield, there's always something new to discover.</p>
+
+        <p>Mana Rock Gaming is building a community where everyone has a place to play, create, and learn together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- our programs -->
+<section class="section dark" id="Programs">
+  <div class="container">
     
-
-    <div class="homepageHeader">
-        <div class="homepageBackground"></div>
-        <div class="homepageTrapezoid"></div>
-        <div class="homepageHeaderCampaignImage"><img src="Images/Photo - Mana Rock Gaming.png" style="width: 65%;" alt="Mana Rock Gaming Logo"></div>
+    <div class="flex-between mb-36">
+      <div>
+        <div class="eyebrow blue"><div class="eyebrow-line"></div><span class="eyebrow-text">How Can We Help You?</span></div>
+        <h2 class="heading" class="h-lg h-white" style="color: white;">OUR PROGRAMS</h2>
+      </div>
     </div>
-</header>
+    
+    <div class="county-grid">
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(217, 101, 79, 0.70), rgba(217, 101, 79, 0.95)), url('Images/Activity Coding.jpeg'); background-size: cover; background-position: center 45%;">💻</div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04);">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Programming Classes</div>
+            <p style="color: var(--palettecoral)">Learn to code, build games, and bring your ideas to life. Our programming classes give students hands-on experience with coding, game development, and computer science.</p>
+          </div>
+        </div>
+      
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(184, 50, 128, 0.70), rgba(184, 50, 128, 0.95)), url('Images/Activity Game Nights.jpeg'); background-size: cover; background-position: center 35%;">⚔️</div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04);">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Community Events</div>
+            <p style="color: var(--palettemagenta);">Bringing people together through games, creativity, and shared experiences. Our community events create welcoming spaces for people to connect, learn, and have fun.</p>
+          </div>
+        </div>
 
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(232, 91, 148, 0.70), rgba(232, 91, 148, 0.95)), url('Images/Activity Board Games.jpg'); background-size: cover; background-position: center 40%;">🎲</div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04);">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Board Game Night</div>
+            <p style="color: var(--paletterose);">Roll the dice, draw a card, and find your next favorite game! Our traveling Board Game Nights are a chance to discover new games, meet new people, and enjoy some friendly competition.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
 
+<!-- our events -->
+<section class="section light" id="Events">
+  <div class="container">
+    <div class="events-header">
+      <div>
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">Join Us At An</span>
+        </div>
+        <h2 class="heading" class="h-lg h-dark">UPCOMING EVENTS</h2>
+      </div>
+      <a href="Events.html" target="_blank" class="btn btn-outline btn-sm">Full List of Events →</a>
+    </div>
+    <div class="event-grid">
+      <!-- Roll Con 2026  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/RollCon 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>ROLL CON 2026</h3>
+          <p>Come visit our table at the Kershaw County Library's gaming and tabletop convention, Roll Con 2026!</p>
+          <div class="ec-meta">
+            <span>📆 November 14th, 2026</span>
+            <span>🕕 11:00AM - 5:00PM</span>
+            <span>📍 Old Camden Armory</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Community Game Day -->
+      <div class="event-card">
+        <div class="ec-banner" style=" background-image: url('Events/Kershaw County Community Game Night Winter 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KERSHAW COUNTY COMMUNITY GAME DAY - WINTER 2026</h3>
+          <p>All proceeds donated to support future events, youth engagement, and educational opportunities.</p>
+          <div class="ec-meta">
+            <span>📆 To Be Determined</span>
+            <span>🕕 To Be Determined</span>
+            <span>📍 Elgin Community Center</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Community Game Night -->
+      <div class="event-card">
+        <div class="ec-banner" style=" background-image: url('Events/Kershaw County Community Game Night July 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KERSHAW COUNTY COMMUNITY GAME NIGHT - JULY 2026</h3>
+          <p>All proceeds donated to support future events, youth engagement, and educational opportunities.</p>
+          <div class="ec-meta">
+            <span>📆 July 31st 2026</span>
+            <span>🕕 4:30PM - 10:30PM</span>
+            <span>📍 Elgin Community Center</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="mobilize-bar">
+      <div>
+        <p>📅 Have an upcoming event you would love the Mana Rock Gaming Foundation to help with? Let us know!</p>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeB0r-MU3ZcEH0zd3Vh_zM8MlbdOY2NZkN3U4C1hAI-2RurvQ/viewform?" target="_blank" class="btn btn-navy btn-sm">Suggest An Event →</a>
+    </div>
+  </div>
+</section>
 
+<!-- newsletter -->
+<section class="section dark" id="Newsletter">
+  <div class="nl-inner">
+    <div class="eyebrow blue center">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Stay Connected</span>
+    </div>
 
-<article>
+    <h2 style="color: white;">Subscribe To Our<span> Newsletter</span></h2>
 
-    <!-- SECTION ONE - MISSION -->
-    <div class="sectionOne">
+    <p style="color: white;">
+      Updates, event alerts, and educational opportunities. No spam — just important news.
+    </p>
 
-        <div class="sectionOneContent">
-            <div class="sectionOneLeftSide">
-                <video class="pictureFramedVideo" controls preload="metadata" playsinline poster="Images/Photo - Programming Graduated Students.JPEG">
-                    <!--<source src="VideoOfBrianCooke.mp4" type="video/mp4">-->
-                </video>
+    <form
+      name="gformnewsletter"
+      id="gformnewsletter"
+      action="https://docs.google.com/forms/d/1Mh7I2IKS6MtbVZJM7We14oYTD_UyumU9_I88NUh5N88/formResponse"
+      method="POST"
+      target="hidden_iframe_newsletter"
+      onsubmit="submitted=true;"
+    >
+
+      <div class="nl-form">
+        <input
+          type="email"
+          name="entry.1099289193"
+          id="nl-email"
+          placeholder="Your email address..."
+          required
+        >
+
+        <button type="submit" class="btn btn-navy">
+          Subscribe →
+        </button>
+      </div>
+
+      <p class="nl-note" style="color: white; margin-bottom: 0px;">
+        Unsubscribe at any time.
+      </p>
+
+    </form>
+
+    <!-- HIDDEN GOOGLE FORM IFRAME -->
+    <iframe
+        name="hidden_iframe_newsletter"
+        id="hidden_iframe_newsletter"
+        style="display:none;"
+        onload="if(submitted) { formSubmittedNewsletter(); }">
+      </iframe>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="success-message-newsletter" class="success" style="display: none; text-align: center; color:black;">
+          <h3 style="color: white" style="margin-bottom: 0px;">Thank you for subscribing!</h3>
+        </div>
+  </div>
+</section>
+
+<!-- donate -->
+<section class="section bg-blue-grad" id="Donate">
+  <div class="container">
+    <div class="donate-long">
+      <div>
+        <h2>Donate To Support Our<span> Mission</span></h2>
+        <p>By supporting the Mana Rock Gaming Foundation you are helping us to build community through the love of gaming. Every donation helps fund programming classes, community events, board game nights, and opportunities for people to play, create, learn, and connect.</p>  
+        </br>
+        <div class="donate-btns">
+          <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank" class="btn btn-gold">Donate via Donorbox →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="section white" id="Contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow blue"><div class="eyebrow-line"></div><span class="eyebrow-text">Reach Out To Us</span></div>
+        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(34px, 4vw, 54px); color: black; line-height: 0.95; margin-bottom: 12px;">
+          We'd Love To
+          </br>
+          <span style="color: var(--palettepurple);">Hear From You</span>
+        </h2>
+
+        <p>Want to learn more about us, get connected, or suggest an event? Let us know! We would love to hear what hobby updates you have.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>ManaRockGaming@gmail.com</p>
             </div>
-
-            <div class="sectionOneRightSide">
-                <h1>Our Mission</h1>
-                <p>
-                    The mission of The Mana Rock Gaming Foundation is to promote public education, creativity, and community engagement in Kershaw County and South Carolina through the joy of gathering around a table or a computer with your friends. We support educational programming, workshops, conventions, and community events that encourage learning in game design, coding, computer science, history, and related fields. Through collaborative play and shared interactive experiences, we hope to create stronger communities across South Carolina. So we hope you join us at our table.
-                </p>
-                <!-- <div class="animatedLinkBlack"><a href="Issues.html" target="_blank" style="font-size: 1.5vw;"><i>Learn More...</i></a></div> -->
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <h4>Mailing Address</h4>
+              <p>PO Box 171, Camden, SC 29020</p>
             </div>
-        </div>
-    </div>
-
-    <!-- SECTION TWO - UPCOMING EVENTS -->
-    <div class="sectionTwo">
-        <div class="sectionTwoContent">
-            <table class="sectionTwoTable">
-                <tr>
-                    <th colspan="3"><h1>Upcoming Events</h1></th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Images/Event - RollCon 2026.png" style="width: 100%;" alt="RollCon 2026">
-                    </td>
-                    <td>
-                        <img src="Images/Event - Kershaw County Community Game Night July 2026.png" style="width: 100%;" alt="Kershaw County Community Game Night">
-                    </td>
-                    <td>
-                        <img src="Images/Event - Kershaw County Youth Programming Class Summer 2026.png" style="width: 100%;" alt="Kershaw County Youth Programming Class">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-size: 1.3vw;"><i>See Us At RollCon 2026 - More Info Coming Soon</i></td>
-                    <td style="vertical-align: middle;"><div class="animatedLinkBlack"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1CDHOTVTvuf4XbmwPUaYAS_4M7ow2Y3h2mgdXGNxqYC5EEA/viewform?usp=header" target="_blank" style="font-size: 1.3vw;"><i>Click Here To RSVP...</i></a></div></td>
-                    <td style="font-size: 1.3vw;"><i>RSVP By Contacting LaurenD@KershawCountyLibrary.org</i></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- SECTION THREE - EMAIL LIST -->
-    <div class="sectionThree">
-        <div class="sectionThreeContent">
-            <div class="sectionThreeLeftSide">
-                <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSdOhJZZTkAWhIIi0Ft_nPLT0boOXGHVUFHcvcHoRKikawk5jQ/formResponse" method="POST"  target="hidden_iframe" onsubmit="submitted=true;">        
-                <div class="inputForm"> 
-                    <table id="formContent" style="width: 100%;">
-                        <!-- INTEREST FORM -->
-                    </table>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { nextForm(); }"></iframe>
-                    <div id="navButtons" style="width: 100%;">
-                        <button type="button" class="inputFormButton" id="backBtn" onclick="prevForm()" style="display:none;">&lt;Join Our Newsletter</button>
-                        <button type="button" class="inputFormButton" id="nextBtn" onclick="nextForm()">Join Our Newsletter</button>
-                        <input type="submit" class="inputFormButton" id="submitBtn" value="Join Our Newsletter" style="display:none; border-radius: 10px; font-weight: bold;">
-                    </div>
-                </div>
-                </form>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><img src="Images/Icon_Facebook.png" style="width: 75%;"></div>
+            <div>
+              <h4>Facebook</h4>
+              <p><a href="https://www.facebook.com/ManaRockGaming/" target="_blank">@ManaRockGaming</a></p>
             </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><img src="Images/Icon_Instagram.png" style="width: 75%;"></div>
+            <div>
+              <h4>Instagram</h4>
+              <p><a href="https://www.instagram.com/ManaRockGaming" target="_blank">@ManaRockGaming</a></p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <script src="jquery-3.7.1.min.js"></script>
-    <script type="text/javascript">
-        var submitted = false;
-        var currentSet = 0;
-        var loadedSets = [];
-        var questionSets = [
-            // First Set
-            `
-            <tr>
-                <th colspan="2">
-                    <b>Join Our Mailing List</b>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <h1>First Name:</h1>
-                    <input type="text" name="entry.1416826571" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-                <td>
-                    <h1>Last Name:</h1>
-                    <input type="text" name="entry.2034341768" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h1>Email:</h1>
-                    <input type="text" name="entry.494377258" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h1>Phone Number:</h1>
-                    <input type="text" name="entry.163118069" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h1>Address:</h1>
-                    <input type="text" name="entry.1613059804" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1>City:</h1>
-                    <input type="text" name="entry.1127665857" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-                <td>
-                    <h1>Zip:</h1>
-                    <input type="text" name="entry.1442093563" maxlength="30" class="inputFormInput" placeholder="">
-                </td>
-            </tr>
-            `,
-        ];
+      <!-- RIGHT SIDE: FORM -->
+      <div class="join-form-wrap" style="background: var(--bg); border: 1px solid var(--border);">
 
-        function updateForm() {
-            // Inject the set if not already added
-            if (!loadedSets.includes(currentSet)) {
-                const wrappedHtml = `<tbody class="formStep" id="formStep${currentSet}">${questionSets[currentSet]}</tbody>`;
-                $("#formContent").append(wrappedHtml);
-                loadedSets.push(currentSet);
-            }
+        <form name="gformcontact" id="gformcontact" action="https://docs.google.com/forms/d/e/1FAIpQLScKtolLZgj9ZZi3zSO6vfmN41dqqOUo4LUU1JU_y4rPHhDx0A/formResponse" method="POST" target="hidden_iframe_contact" onsubmit="submitted=true;">
 
-            // Hide all sets
-            $(".formStep").hide();
+          <div class="cfield">
+            <label>Name*</label>
+            <input type="text" name="entry.1096061931" placeholder="Your full name" maxlength="45"required>
+          </div>
 
-            // Show current set
-            $(`#formStep${currentSet}`).show();
+          <div class="cfield">
+            <label>Email*</label>
+            <input type="email" name="entry.1099289193" placeholder="your@email.com" maxlength="45" required>
+          </div>
 
-            // Toggle nav buttons
-            $("#backBtn").toggle(currentSet > 0);
-            $("#nextBtn").toggle(currentSet < questionSets.length - 1);
-            $("#submitBtn").toggle(currentSet === questionSets.length - 1);
-        }
+          <div class="cfield">
+            <label>Subject*</label>
+            <input type="text" name="entry.2143632729" placeholder="Email subject" maxlength="45" required>
+          </div>
 
-        function nextForm() {
-            if (currentSet < questionSets.length - 1) {
-                currentSet++;
-                updateForm();
-            }
-        }
+          <div class="cfield">
+            <label>Message*</label>
+            <textarea name="entry.37529902" placeholder="Tell us what's on your mind..." maxlength="3000" required></textarea>
+          </div>
 
-        function prevForm() {
-            if (currentSet > 0) {
-                currentSet--;
-                updateForm();
-            }
-        }
+          <button type="submit" class="btn btn-navy btn-full">Send Message →</button>
 
-        $(document).ready(function () {
-            updateForm(); // Show first step
-        });
-    </script>
+        </form>
 
-    <script src="jquery-3.7.1.min.js"></script>
-    <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">
-        $('#gform').on('submit', function(e) {
-        $('#gform *').fadeOut(1000);
-        $('#gform').prepend(
-        '<span class="inputFormThanks" style="margin: 0% 10% 0% 0%;"><div>Thank You For Signing Up To Our Mailing List!</div></span>');});
-    </script>
 
-    <!-- SECTION FOUR - PAUSE. PLAN. PROTECT. -->
-    <div class="sectionFour">
-        <div class="sectionFourContent">
-            <table class="sectionFourTable">
-                <tr>
-                    <th colspan="3"><h1>FOR THE LOVE OF GAMING!</h1></th>
-                </tr>
-                <tr>
-                    <td>
-                        <h1>COMMUNITY</h1>
-                        <p style="font-size: 1.5vw;"><i>Community Map Coming Soon</i></p>
-                    </td>
-                    <td>
-                        <h1>EDUCATION</h1>
-                        <div class="animatedLink"><a href="Programming With Conor - Resource Folder.zip" target="_blank" style="font-size: 1.5vw;"><i>Summer Course Resources...</i></a></div>
-                    </td>
-                    <td>
-                        <h1>AND FUN</h1>
-                        <div class="animatedLink"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1CDHOTVTvuf4XbmwPUaYAS_4M7ow2Y3h2mgdXGNxqYC5EEA/viewform?usp=header" target="_blank" style="font-size: 1.5vw;"><i>Community Game Night RSVP...</i></a></div>
-                    </td>
-                </tr>
-            </table>
+        <!-- HIDDEN GOOGLE FORM IFRAME -->
+        <iframe
+          name="hidden_iframe_contact"
+          id="hidden_iframe_contact"
+          style="display:none;"
+          onload="if(submitted) { formSubmitted(); }"
+        ></iframe>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="success-message-contact" class="success" style="display: none; text-align: center; padding: 30px; color:black;">
+          <h3 style="color: black">Thank You!</h3>
+          <p>Your message has been sent successfully. We'll get back to you soon. In the meantime, a great way to stay up to date on all Mana Rock Gaming updates is to follow us on <a href="https://www.instagram.com/ManaRockGaming" target="_blank" style="color: black; font-weight: bold;">Instagram</a> or <a href="https://www.facebook.com/ManaRockGaming/" target="_blank" style="color: black; font-weight: bold;">Facebook</a>!</p>
         </div>
+
+      </div>
     </div>
+  </div>
+</section>
 
-</article>
+<!-- social links -->
+<div class="social-bar">
+  <div class="social-bar-inner">
+    <span class="social-bar-label">Follow Us On:</span>
+    <a href="https://www.facebook.com/ManaRockGaming/" target="_blank" class="social-link">
+      <img src="Images/Icon_Facebook.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Facebook Link" class="social-icon">
+      Facebook
+    </a>
 
+    <a href="https://www.instagram.com/ManaRockGaming" target="_blank" class="social-link">
+      <img src="Images/Icon_Instagram.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Instagram Link" class="social-icon">
+      Instagram
+    </a>
 
+    <a href="https://discord.gg/whxNu83RJh" target="_blank" class="social-link">
+      <img src="Images/Icon_Discord.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Discord Link" class="social-icon">
+      Discord
+    </a>
 
-<!-- FOOTER -->
+    <a href="https://www.reddit.com/r/KershawCounty/" target="_blank" class="social-link">
+      <img src="Images/Icon_Reddit.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Reddit Link" class="social-icon">
+      Reddit
+    </a>
+  </div>
+</div>
+
+<!-- footer -->
 <footer>
-    <div class="sectionFooter">
-        <div class="sectionFooterContent">
-            <table class="sectionFooterTable">
-                <tr>
-                    <td style="width: 10%;">
-                        <img src="Images/Photo - Merlin Wizard.png" style="width: 100%;">
-                    </td>
-                    <td style="width: 30%;">
-                        
-                            <!--
-                        	<div class="animatedLink"><p class="textextrasmall">ManaRockGaming@gmail.com | Copyright @2021 | All Rights Reserved | Website Programmed By <a href="https://www.instagram.com/ConorXRom/" target="_blank">Conor X. Rom</a></p></div>
-                            -->
-                        
-                        <h1><b><u>EMAIL:</u></b></h1>
-                        <div class="animatedLinkFooter"><p><a href="mailto:ManaRockGaming@gmail.com" target="_blank">ManaRockGaming@gmail.com</a></p></div>
-                        
-                        </br>
-
-                        <h1><b><u>PRIVACY POLICY:</u></b></h1>
-                        <div class="animatedLinkFooter"><p><a href="https://docs.google.com/document/d/1-uCAds6IkdMrAmEpzNbXh278GL-i0SWGYaLm6BRFgkE/edit?usp=sharing" target="_blank">Privacy Policy</a></p></div>
-                    </td>
-                    <td style="width: 30%;">
-                        <h1><b><u>BOARD OF DIRECTORS:</u></b></h1>
-                        <div class="animatedLinkFooter"><p><a href="https://www.instagram.com/ConorXRom" target="_blank">Conor Rom</a></p></div>
-                        <p>Joe McLaughlin</p>
-                        <p>Mark Wood</p>
-                        <p>Ryan Roark</p>
-                        <p>Shaun Stewart</p>
-                    </td>
-                    <td style="width: 30%;">
-                        <div class="sectionFooterSocialWrapper">
-                            <div>
-                                <h1><b><u>SOCIALS:</u></b></h1>
-                            </div>
-                        
-                            <div class="sectionFooterSocialRow social-row">
-                                <a href="https://www.instagram.com/ManaRockGaming" target="_blank">
-                                    <img src="Icon_Instagram.png"
-                                    onmouseover="this.src='Icon_Instagram_Hover.png';"
-                                    onmouseout="this.src='Icon_Instagram.png';"
-                                    alt="Link to Mana Rock Gaming's Instagram">
-                                </a>
-
-                                <a href="https://www.facebook.com/ManaRockGaming/" target="_blank">
-                                    <img src="Icon_Facebook.png"
-                                    onmouseover="this.src='Icon_Facebook_Hover.png';"
-                                    onmouseout="this.src='Icon_Facebook.png';"
-                                    alt="Link to Mana Rock Gaming's Facebook">
-                                </a>
-
-                                <a href="https://discord.gg/whxNu83RJh" target="_blank">
-                                    <img src="Icon_Discord.png"
-                                    onmouseover="this.src='Icon_Discord_Hover.png';"
-                                    onmouseout="this.src='Icon_Discord.png';"
-                                    alt="Link to Kershaw County Tabletop Gaming Community Discord">
-                                </a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    
-        <div class="sectionPaidForByContent">
-            <div class="paidForBy" colspan="3">
-                <p style="margin: 0px; font-size: 1.25vw;">
-                    <b><i>The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</b>
-                </p>
-                <div class="animatedLink">
-                    <p style="margin: 1%; font-size: 1.0vw;">MORE WEBSITE IMPROVEMENTS COMING SOON</i></p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">The Mana Rock Gaming Foundation</div>
+        <p>Promoting public education, creativity, and community engagement in Kershaw County through the joy of gathering around a table or a screen with your friends.</p>
+        <div class="tagline">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="Leadership.html">Leadership</a>
+        <a href="Events.html">Events</a>
+        <a href="CommunityMap.html">Community</a>
+        <a href="Library.html">Library</a>
+        <a href="index.html#Contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="index.html#Newsletter">Newsletter</a>
+        <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
+        <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank">Donate via Donorbox</a>
+      </div>
+      <div class="footer-col">
+        <h4>Helpful Links</h4>
+        <a href="https://magic.wizards.com/en/how-to-play" target="_blank">How To Play Magic the Gathering</a>
+        <a href="https://tcg.pokemon.com/en-us/learn/" target="_blank">How To Play Pokémon</a>
+        <a href="https://warhammer40000.com/getting-started/" target="_blank">How To Play Warhammer 40K</a>
+      </div>
     </div>
-
+    <div class="footer-bottom">
+      <p>ManaRockGaming@gmail.com | PO Box 171, Camden, SC 29020 | © The Mana Rock Gaming Foundation. All rights reserved.</p>
+      <span><a href="https://www.instagram.com/conorxrom/" target="_blank" style="color: rgba(255,255,255,0.18);">🛠️ Website Maintained by Conor X. Rom</a></span>
+    </div>
+    <p class="footer-legal">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</p>
+  </div>
 </footer>
+
+<script>
+// close mobile menu when clicking outside
+document.getElementById('navOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+
+// substack rss auto-load — replace [SUBSTACK_URL] before deploying
+async function loadPosts() {
+  try {
+    const url = '[SUBSTACK_URL]';
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + url + '/feed');
+    const data = await res.json();
+    if (!data.items?.length) return;
+    const f = data.items[0];
+    document.querySelector('.blog-main-body h3').textContent = f.title;
+    document.querySelector('.blog-main-body p').textContent = f.description.replace(/<[^>]*>/g,'').substring(0,150) + '...';
+    document.querySelector('.blog-main-body a').href = f.link;
+    const minis = document.querySelectorAll('.blog-mini');
+    for (let i = 0; i < Math.min(4, data.items.length - 1); i++) {
+      const m = minis[i];
+      if (!m) continue;
+      m.querySelector('h4').textContent = data.items[i+1].title;
+      m.onclick = () => window.open(data.items[i+1].link, '_blank');
+    }
+  } catch(e) { /* shows placeholder content if rss fails */ }
+}
+loadPosts();
+</script>
+
+
+<!-- Newsletter Script -->
+<script>
+  var submitted = false;
+
+  function formSubmittedNewsletter() {
+    document.getElementById("gformnewsletter").style.display = "none";
+    document.getElementById("success-message-newsletter").style.display = "block";
+  }
+</script>
+
+<!-- Contact Script -->
+<script>
+  var submitted = false;
+
+  function formSubmitted() {
+    document.getElementById("gformcontact").style.display = "none";
+    document.getElementById("success-message-contact").style.display = "block";
+  }
+</script>
+
 </body>
 </html>

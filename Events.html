@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mana Rock Gaming - Events</title>
+<link rel="icon" href="Images/Mana Rock Gaming Square Logo.png" alt="Mana Rock Gaming Logo">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=[GOOGLE_ANALYTICS_ID]"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '[GOOGLE_ANALYTICS_ID]');
+</script>
+<link rel="stylesheet" type="text/css" href="general.css" />
+</head>
+<body>
+
+<!-- nav -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="Images/Mana Rock Gaming Logo.png" alt="Mana Rock Gaming Logo">
+    <div class="nav-logo-text">
+      <div class="name">The Mana Rock Gaming Foundation</div>
+    </div>
+  </a>
+
+  <div class="nav-links">
+    
+    <a href="Mission.html">
+      Our Mission
+    </a>
+
+    <a href="Leadership.html">
+      Our Leadership
+    </a>
+
+    <a href="Events.html">
+      Our Events
+    </a>
+
+    <!-- Community -->
+    <div class="nav-dropdown">
+      <a href="CommunityMap.html" class="nav-dropdown-toggle">
+        Our Community (WIP)<!--<span>▾</span>-->
+      </a>
+      <!--
+      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="CommunityMap.html">Community Map</a>
+          <a href="https://discord.gg/whxNu83RJh" target="_blank">Community Discord</a>
+          <a href="CommunityArtists.html">Community Artists</a>
+          <a href="CommunityProgrammers.html">Community Programmers</a>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <a href="Library.html">
+      Our Library (WIP)
+    </a>
+
+    <!--
+    <a href="SiegeOfCamden.html">
+      The Siege of Camden Prime
+    </a>
+    -->
+
+    <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank" class="cta">
+      Donate
+    </a>
+  </div>
+
+  <button class="hamburger"
+    onclick="document.getElementById('navOverlay').classList.add('open')"
+    aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- mobile nav -->
+<div class="nav-overlay" id="navOverlay">
+  <button class="nav-overlay-close" onclick="document.getElementById('navOverlay').classList.remove('open')">✕</button>
+  <a href="index.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+  <a href="Mission.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Mission</a>
+  <a href="Leadership.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Our Leadership</a>
+  <a href="Events.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Events</a>
+  <a href="CommunityMap.html"     onclick="document.getElementById('navOverlay').classList.remove('open')">Our Community (WIP)</a>
+  <a href="Library.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Our Library (WIP)</a>
+  <!--<a href="SiegeOfCamden.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Siege of Camden</a>-->
+  <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank"   onclick="document.getElementById('navOverlay').classList.remove('open')">Donate</a>
+</div>
+
+<!-- our events -->
+<section class="section light" id="Events">
+  <div class="container">
+    <div class="events-header">
+      <div>
+        <div class="eyebrow">
+          <div class="eyebrow-line" style="background: var(--palettepurple)"></div>
+          <span class="eyebrow-text" style="color: var(--palettepurple)">Join Us At An</span>
+        </div>
+        <h2 class="heading" class="h-lg h-dark">UPCOMING EVENTS</h2>
+      </div>
+
+    </div>
+    <div class="event-grid">
+      
+      <!-- Roll Con 2026  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/RollCon 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>ROLL CON 2026</h3>
+          <p>Come visit our table at the Kershaw County Library's gaming and tabletop convention, Roll Con 2026!</p>
+          <div class="ec-meta">
+            <span>📆 November 14th, 2026</span>
+            <span>🕕 11:00AM - 5:00PM</span>
+            <span>📍 Old Camden Armory</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Community Game Day -->
+      <div class="event-card">
+        <div class="ec-banner" style=" background-image: url('Events/Kershaw County Community Game Night Winter 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KERSHAW COUNTY COMMUNITY GAME DAY - WINTER 2026</h3>
+          <p>All proceeds donated to support future events, youth engagement, and educational opportunities.</p>
+          <div class="ec-meta">
+            <span>📆 To Be Determined</span>
+            <span>🕕 To Be Determined</span>
+            <span>📍 Elgin Community Center</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Community Game Night -->
+      <div class="event-card">
+        <div class="ec-banner" style=" background-image: url('Events/Kershaw County Community Game Night July 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KERSHAW COUNTY COMMUNITY GAME NIGHT - JULY 2026</h3>
+          <p>All proceeds donated to support future events, youth engagement, and educational opportunities.</p>
+          <div class="ec-meta">
+            <span>📆 July 31st 2026</span>
+            <span>🕕 4:30PM - 10:30PM</span>
+            <span>📍 Elgin Community Center</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Summer Youth Programming -->
+      <div class="event-card">
+        <div class="ec-banner" style=" background-image: url('Events/Kershaw County Youth Programming Class Summer 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KC LIBRARY YOUTH VIDEO GAME PROGRAMMING - SUMMER COURSE 2026</h3>
+          <p>Free youth video game programming classes for those aged 13-17 years old.</p>
+          <div class="ec-meta">
+            <span>📆 Every Friday In June 2026</span>
+            <span>🕕 1:30PM - 3:30PM</span>
+            <span>📍 Camden Library</span>
+          </div>
+        </div>
+      </div>
+      <!-- Kershaw County Winter Youth Programming  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/Kershaw County Youth Programming Class Spring 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>KC LIBRARY YOUTH VIDEO GAME PROGRAMMING - WINTER COURSE 2026</h3>
+          <p>Free youth video game programming classes for those aged 13-17 years old.</p>
+          <div class="ec-meta">
+            <span>📆 Every Other Tuesday In Jan/Feb 2026</span>
+            <span>🕕 3:30PM - 4:30PM</span>
+            <span>📍 Camden Library</span>
+          </div>
+        </div>
+      </div>
+      <!-- Roll Con 2025  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/RollCon 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>ROLL CON 2025</h3>
+          <p>Come visit our table at the Kershaw County Library's gaming and tabletop convention, Roll Con 2025!</p>
+          <div class="ec-meta">
+            <span>📆 November 5th, 2025</span>
+            <span>🕕 12:00PM - 4:00PM</span>
+            <span>📍 Old Camden Armory</span>
+          </div>
+        </div>
+      </div>
+      <!-- Merit Bade University  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/Conor Rom Teaching Board Game Design.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>CITADEL MERIT BADGE UNIVERSITY 2025</h3>
+          <p>Join us at The Citadel for the Eagle Scout Associations' 2025 Merit Badge University.</p>
+          <div class="ec-meta">
+            <span>📆 Spring 2025</span>
+            <span>📍 The Citadel</span>
+          </div>
+        </div>
+      </div>
+      <!-- Saint Albans Board Game Drive  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/Saint Albans Board Game Drive.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>SAINT ALBANS BOARD GAME DRIVE</h3>
+          <p>Help us build a board game collection to support the Saint Albans Chapel's Freshmen Lounge.</p>
+          <div class="ec-meta">
+            <span>📆 Fall 2023</span>
+            <span>📍 The Citadel</span>
+          </div>
+        </div>
+      </div>
+      <!-- Elgin Board Game Drive  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/Elgin Board Game Drive.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+            Event Concluded
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>ELGIN BOARD GAME DRIVE</h3>
+          <p>Help us build a board game collection at the Kershaw County Libary, Elgin Branch.</p>
+          <div class="ec-meta">
+            <span>📆 Summer 2021</span>
+            <span>📍 Elgin Library</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mobilize-bar">
+      <div>
+        <p>📅 Have an upcoming event you would love the Mana Rock Gaming Foundation to help with? Let us know!</p>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeB0r-MU3ZcEH0zd3Vh_zM8MlbdOY2NZkN3U4C1hAI-2RurvQ/viewform?" target="_blank" class="btn btn-navy btn-sm">Suggest An Event →</a>
+    </div>
+  </div>
+</section>
+
+<!-- social links -->
+<div class="social-bar">
+  <div class="social-bar-inner">
+    <span class="social-bar-label">Follow Us On:</span>
+    <a href="https://www.facebook.com/ManaRockGaming/" target="_blank" class="social-link">
+      <img src="Images/Icon_Facebook.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Facebook Link" class="social-icon">
+      Facebook
+    </a>
+
+    <a href="https://www.instagram.com/ManaRockGaming" target="_blank" class="social-link">
+      <img src="Images/Icon_Instagram.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Instagram Link" class="social-icon">
+      Instagram
+    </a>
+
+    <a href="https://discord.gg/whxNu83RJh" target="_blank" class="social-link">
+      <img src="Images/Icon_Discord.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Discord Link" class="social-icon">
+      Discord
+    </a>
+
+    <a href="https://www.reddit.com/r/KershawCounty/" target="_blank" class="social-link">
+      <img src="Images/Icon_Reddit.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Reddit Link" class="social-icon">
+      Reddit
+    </a>
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">The Mana Rock Gaming Foundation</div>
+        <p>Promoting public education, creativity, and community engagement in Kershaw County through the joy of gathering around a table or a screen with your friends.</p>
+        <div class="tagline">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="Leadership.html">Leadership</a>
+        <a href="Events.html">Events</a>
+        <a href="CommunityMap.html">Community</a>
+        <a href="Library.html">Library</a>
+        <a href="index.html#Contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="index.html#Newsletter">Newsletter</a>
+        <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
+        <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank">Donate via Donorbox</a>
+      </div>
+      <div class="footer-col">
+        <h4>Helpful Links</h4>
+        <a href="https://magic.wizards.com/en/how-to-play" target="_blank">How To Play Magic the Gathering</a>
+        <a href="https://tcg.pokemon.com/en-us/learn/" target="_blank">How To Play Pokémon</a>
+        <a href="https://warhammer40000.com/getting-started/" target="_blank">How To Play Warhammer 40K</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>ManaRockGaming@gmail.com | PO Box 171, Camden, SC 29020 | © The Mana Rock Gaming Foundation. All rights reserved.</p>
+      <span><a href="https://www.instagram.com/conorxrom/" target="_blank" style="color: rgba(255,255,255,0.18);">🛠️ Website Maintained by Conor X. Rom</a></span>
+    </div>
+    <p class="footer-legal">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</p>
+  </div>
+</footer>
+
+<script>
+// close mobile menu when clicking outside
+document.getElementById('navOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+
+// substack rss auto-load — replace [SUBSTACK_URL] before deploying
+async function loadPosts() {
+  try {
+    const url = '[SUBSTACK_URL]';
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + url + '/feed');
+    const data = await res.json();
+    if (!data.items?.length) return;
+    const f = data.items[0];
+    document.querySelector('.blog-main-body h3').textContent = f.title;
+    document.querySelector('.blog-main-body p').textContent = f.description.replace(/<[^>]*>/g,'').substring(0,150) + '...';
+    document.querySelector('.blog-main-body a').href = f.link;
+    const minis = document.querySelectorAll('.blog-mini');
+    for (let i = 0; i < Math.min(4, data.items.length - 1); i++) {
+      const m = minis[i];
+      if (!m) continue;
+      m.querySelector('h4').textContent = data.items[i+1].title;
+      m.onclick = () => window.open(data.items[i+1].link, '_blank');
+    }
+  } catch(e) { /* shows placeholder content if rss fails */ }
+}
+loadPosts();
+</script>
+
+
+<!-- Newsletter Script -->
+<script>
+  var submitted = false;
+
+  function formSubmittedNewsletter() {
+    document.getElementById("gformnewsletter").style.display = "none";
+    document.getElementById("success-message-newsletter").style.display = "block";
+  }
+</script>
+
+<!-- Contact Script -->
+<script>
+  var submitted = false;
+
+  function formSubmitted() {
+    document.getElementById("gformcontact").style.display = "none";
+    document.getElementById("success-message-contact").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
