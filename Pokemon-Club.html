@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mana Rock Gaming - Pokemon Club</title>
+<link rel="icon" href="Images/Mana Rock Gaming Square Logo.png" alt="Mana Rock Gaming Logo">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=[GOOGLE_ANALYTICS_ID]"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '[GOOGLE_ANALYTICS_ID]');
+</script>
+<link rel="stylesheet" type="text/css" href="general.css" />
+</head>
+<body>
+
+<!-- nav -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="Images/Mana Rock Gaming Logo.png" alt="Mana Rock Gaming Logo">
+    <div class="nav-logo-text">
+      <div class="name">The Mana Rock Gaming Foundation</div>
+    </div>
+  </a>
+
+  <div class="nav-links">
+    
+    <a href="Mission.html">
+      Our Mission
+    </a>
+
+    <a href="Leadership.html">
+      Our Leadership
+    </a>
+
+    <a href="Events.html">
+      Our Events
+    </a>
+
+    <!-- Community 
+    <div class="nav-dropdown">
+      <a href="CommunityMap.html" class="nav-dropdown-toggle">
+        Our Community (WIP)<span>▾</span>
+      </a>
+      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="CommunityMap.html">Community Map</a>
+          <a href="https://discord.gg/whxNu83RJh" target="_blank">Community Discord</a>
+          <a href="CommunityArtists.html">Community Artists</a>
+          <a href="CommunityProgrammers.html">Community Programmers</a>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <a href="Pokemon-Club.html">
+      Pokémon Club
+    </a>
+
+    <!--
+    <a href="SiegeOfCamden.html">
+      The Siege of Camden Prime
+    </a>
+    -->
+
+    <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank" class="cta">
+      Donate
+    </a>
+  </div>
+
+  <button class="hamburger"
+    onclick="document.getElementById('navOverlay').classList.add('open')"
+    aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- mobile nav -->
+<div class="nav-overlay" id="navOverlay">
+  <button class="nav-overlay-close" onclick="document.getElementById('navOverlay').classList.remove('open')">✕</button>
+  <a href="index.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+  <a href="Mission.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Mission</a>
+  <a href="Leadership.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Our Leadership</a>
+  <a href="Events.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Our Events</a>
+  <a href="Pokemon-Club.html"    onclick="document.getElementById('navOverlay').classList.remove('open')">Pokémon Club</a>
+  <!--<a href="CommunityMap.html"     onclick="document.getElementById('navOverlay').classList.remove('open')">Our Community (WIP)</a>
+  <a href="Library.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Our Library (WIP)</a>
+  <a href="SiegeOfCamden.html"  onclick="document.getElementById('navOverlay').classList.remove('open')">Siege of Camden</a>-->
+  <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank"   onclick="document.getElementById('navOverlay').classList.remove('open')">Donate</a>
+</div>
+
+<!-- title -->
+<section class="section light" id="Title" style="min-height: 70vh; background-image: linear-gradient(rgba(59, 10, 87, 0.70), rgba(162, 0, 255, 0.95)), url('Pokemon/Background-Pokemon-Battle.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container">
+  
+    <div class="origin-big" style="color: white; text-align: center;">
+      The Mana Rock</br>Gaming<span style="color: var(--palettepurple-dark)"> Foundation's</span>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <img src="Pokemon/Logo-Pokemon-Club.png">      
+    </div>
+  
+  </div>
+</section>
+
+<!-- introduction -->
+<section class="section light" id="Introduction">
+  <div class="container">
+    <div class="origin-wrap" style="grid-template-columns: 20fr 60fr 20fr;">
+      <div>
+        <div class="origin-label">Our Purpose?</div>
+        <div class="origin-big">Friendship,<br>Reading,<br><span>& Thinking</span></div>
+      </div>
+      <div class="origin-text">
+        <p>Pokémon Club is a fun and welcoming program for children aged 6-11 years old that helps develop important life skills through playing the Pokémon Trading Card Game (TCG).</p>
+
+        <p>It provides an inclusive space for young players to think strategically, build social-emotional skills, make new friends, and connect with fellow Pokémon fans.</p>
+
+        <p>Mana Rock Gaming would also like to extend a special thank you to our program partner, the Kershaw County Library System, for helping us bring the joy of gaming to everyone in our community!</p>
+      </div>
+      <div>
+      
+        <img src="Pokemon/Trainer-Eevee.png">
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick your starter -->
+<section class="section dark" id="Events">
+  <div class="container">
+    <div class="events-header">
+      <div>
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">Select Your</span>
+        </div>
+        <h2 class="heading" style="color: white;">STARTING POKÉMON</h2>
+      </div>
+      <a href="https://kershawcountylibrary.libcal.com/event/17982027" target="_blank" class="btn btn-outline-gold btn-sm">Register Today →</a>
+    </div>
+    
+    <div class="origin-wrap" style="grid-template-columns: 20fr 30fr 50fr;">
+      <div>
+      
+        <img src="Pokemon/Trainer-Pikachu.png">
+      
+      </div>
+      <div class="origin-text">
+        <p style="color: white;">Pokémon Club provides all the material you need to participate, all for free. Grab some friends and walk home with a great learning opportunity.</p>
+      
+        <p style="color: white">Part of the Pokémon Club program is built to gradially increasing the decision making process of its participates. So the more meetings you attend, the greater opportunities to think critically and make friends.</p>
+      </div>
+      
+      <div>
+        <div class="event-grid" style="grid-template-columns: repeat(3, 1fr); gap: 18px;">
+          <!-- GRENINJA  -->
+          <div class="event-card">
+            <div class="ec-banner" style="background-image: url('Pokemon/Card-Greninja.avif'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+              </div>
+            </div>
+            <div class="ec-body" style="text-align: center; background-color: var(--palettepurple-deep); border-top: 1px solid var(--border);">
+              <h3 style="color: white; display: flex; align-items: center; justify-content: center; gap: 4px;"><img src="Pokemon/Type-Water.png" style="height: 1em; width: auto;">Greninja</h3>
+              <p style="color: white;">
+                Carvanha
+                <br>
+                Sobble
+              </p>
+            </div>
+          </div>
+          <!-- LUCARIO -->
+          <div class="event-card">
+            <div class="ec-banner" style=" background-image: url('Pokemon/Card-Lucario.avif'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+              </div>
+            </div>
+            <div class="ec-body" style="text-align: center; background-color: var(--palettepurple-deep); border-top: 1px solid var(--border);">
+              <h3 style="color: white; display: flex; align-items: center; justify-content: center; gap: 4px;"><img src="Pokemon/Type-Fighting.png" style="height: 1em; width: auto;">Lucario</h3>
+              <p style="color: white;">
+                Machop
+                <br>
+                Rockruff
+              </p>
+            </div>
+          </div>
+          <!-- UMBREON -->
+          <div class="event-card">
+            <div class="ec-banner" style=" background-image: url('Pokemon/Card-Umbreon.avif'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+              </div>
+            </div>
+            <div class="ec-body" style="text-align: center; background-color: var(--palettepurple-deep); border-top: 1px solid var(--border);">
+              <h3 style="color: white; display: flex; align-items: center; justify-content: center; gap: 4px;"><img src="Pokemon/Type-Darkness.png" style="height: 1em; width: auto;">Umbreon</h3>
+              <p style="color: white;">
+                Zorua
+                <br>
+                Zigazagoon
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+<!-- our events -->
+<section class="section light" id="Events">
+  <div class="container">
+    <div class="events-header">
+      <div>
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">Join Us At An</span>
+        </div>
+        <h2 class="heading" class="h-lg h-dark">UPCOMING POKÉMON EVENT</h2>
+      </div>
+      <a href="https://kershawcountylibrary.libcal.com/event/17982027" target="_blank" class="btn btn-outline btn-sm">Register Today →</a>
+    </div>
+    <div class="event-grid">
+      <!-- Roll Con 2026  -->
+      <div class="event-card">
+        <div class="ec-banner" style="background-image: url('Events/RollCon 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
+          </div>
+        </div>
+        <div class="ec-body">
+          <h3>POKÉMON CLUB WINTER 2026/2027</h3>
+          <p>Come join us at the Kershaw County Library Camden branch for our bi-monthly Pokémon Club meeting for ages 6-11.</p>
+          <div class="ec-meta">
+            <span>📆 Dec 4th 2026, Dec 18th 2026, Jan 8th 2027</span>
+            <span>🕕 3:30PM - 4:45PM</span>
+            <span>📍 Camden Library - 1304 Broad St. Camden SC</span>
+          </div>
+          <div class="event-btns" style="width: 50%;">
+            <a href="https://kershawcountylibrary.libcal.com/event/17982027" target="_blank" class="primary">RSVP →</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    <div class="mobilize-bar">
+      <div>
+        <p>📅 Have an upcoming event you would love the Mana Rock Gaming Foundation to help with? Let us know!</p>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeB0r-MU3ZcEH0zd3Vh_zM8MlbdOY2NZkN3U4C1hAI-2RurvQ/viewform?" target="_blank" class="btn btn-navy btn-sm">Suggest An Event →</a>
+    </div>
+  </div>
+</section>
+
+<!-- our programs -->
+<section class="section dark" id="Programs">
+  <div class="container">
+    
+    <div class="flex-between mb-36">
+      <div>
+        <div class="eyebrow blue"><div class="eyebrow-line"></div><span class="eyebrow-text">LEARN AT HOME</span></div>
+        <h2 class="heading" class="h-lg h-white" style="color: white;">RESOURCE LIST</h2>
+      </div>
+    </div>
+    
+    <div class="county-grid">
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(92, 72, 236, 0.7), rgba(92, 72, 236, 0.95)), url('Pokemon/Picture-Trainers-1.png'); background-size: cover; background-position: center 20%;"><img src="Pokemon/Type-Water-Large.png" style="width: 30%;"></div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04); text-align: center;">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Lesson 1</div>
+            <p style="color: white;">Available After December 4th, 2026.</p>
+          </div>
+        </div>
+      
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(213, 109, 40, 0.7), rgba(213, 109, 40, 0.95)), url('Pokemon/Picture-Trainers-2.jpg'); background-size: cover; background-position: center 20%;"><img src="Pokemon/Type-Fighting-Large.png" style="width: 30%;"></div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04); text-align: center;">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Lesson 2</div>
+            <p style="color: white;">Available After December 18th, 2026.</p>
+          </div>
+        </div>
+
+        <div class="county-card">
+          <div class="county-card-banner" style="background-image: linear-gradient(rgba(51, 50, 59, 0.7), rgba(51, 50, 59, 0.95)), url('Pokemon/Picture-Trainers-3.jpg'); background-size: cover; background-position: center 30%;"><img src="Pokemon/Type-Darkness-Large.png" style="width: 30%;"></div>
+          <div class="county-card-body" style="background: rgba(255,255,255,0.04); text-align: center;">
+            <div class="county-name" style="font-family: sans-serif; font-weight: bold; color: white;">Lesson 3</div>
+            <p style="color: white;">Available After January 8th, 2027.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- donate -->
+<section class="section bg-blue-grad" id="Donate" style="background-image: linear-gradient(rgba(59, 10, 87, 0.70), rgba(59, 10, 87, 0.95)), url('Images/Background Banner.png'); background-size: cover; background-position: center; border-top: 3px solid var(--palettegold);">
+  <div class="container">
+    <div class="donate-long">
+      <div>
+        <h2>Donate To Support Our<span> Mission</span></h2>
+        <p>By supporting the Mana Rock Gaming Foundation you are helping us to build community through the love of gaming. Every donation helps fund programming classes, community events, board game nights, and opportunities for people to play, create, learn, and connect.</p>  
+        </br>
+        <div class="donate-btns">
+          <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank" class="btn btn-gold">Donate via Donorbox →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- social links -->
+<div class="social-bar">
+  <div class="social-bar-inner">
+    <span class="social-bar-label">Follow Us On:</span>
+    <a href="https://www.facebook.com/ManaRockGaming/" target="_blank" class="social-link">
+      <img src="Images/Icon_Facebook.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Facebook Link" class="social-icon">
+      Facebook
+    </a>
+
+    <a href="https://www.instagram.com/ManaRockGaming" target="_blank" class="social-link">
+      <img src="Images/Icon_Instagram.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Instagram Link" class="social-icon">
+      Instagram
+    </a>
+
+    <a href="https://discord.gg/whxNu83RJh" target="_blank" class="social-link">
+      <img src="Images/Icon_Discord.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Discord Link" class="social-icon">
+      Discord
+    </a>
+
+    <a href="https://www.reddit.com/r/KershawCounty/" target="_blank" class="social-link">
+      <img src="Images/Icon_Reddit.png" style="width: 16px; height: 16px; object-fit: contain; flex-shrink: 0;" alt="Reddit Link" class="social-icon">
+      Reddit
+    </a>
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">The Mana Rock Gaming Foundation</div>
+        <p>Promoting public education, creativity, and community engagement in Kershaw County through the joy of gathering around a table or a screen with your friends.</p>
+        <div class="tagline">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="Leadership.html">Leadership</a>
+        <a href="Events.html">Events</a>
+        <a href="CommunityMap.html">Community</a>
+        <a href="Library.html">Library</a>
+        <a href="index.html#Contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="index.html#Newsletter">Newsletter</a>
+        <a href="Privacy-Policy.html" target="_blank">Privacy Policy</a>
+        <a href="https://donorbox.org/mana-rock-gaming-donate" target="_blank">Donate via Donorbox</a>
+      </div>
+      <div class="footer-col">
+        <h4>Helpful Links</h4>
+        <a href="https://magic.wizards.com/en/how-to-play" target="_blank">How To Play Magic the Gathering</a>
+        <a href="https://tcg.pokemon.com/en-us/learn/" target="_blank">How To Play Pokémon</a>
+        <a href="https://warhammer40000.com/getting-started/" target="_blank">How To Play Warhammer 40K</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>ManaRockGaming@gmail.com | PO Box 171, Camden, SC 29020 | © The Mana Rock Gaming Foundation. All rights reserved.</p>
+      <span><a href="https://www.instagram.com/conorxrom/" target="_blank" style="color: rgba(255,255,255,0.18);">🛠️ Website Maintained by Conor X. Rom</a></span>
+    </div>
+    <p class="footer-legal">The Mana Rock Gaming Foundation (DBA Mana Rock Gaming) is a South Carolina nonprofit and IRS-recognized 501(c)(3) tax-exempt organization incorporated on July 11th 2026.</p>
+  </div>
+</footer>
+
+<script>
+// close mobile menu when clicking outside
+document.getElementById('navOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+
+// substack rss auto-load — replace [SUBSTACK_URL] before deploying
+async function loadPosts() {
+  try {
+    const url = '[SUBSTACK_URL]';
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + url + '/feed');
+    const data = await res.json();
+    if (!data.items?.length) return;
+    const f = data.items[0];
+    document.querySelector('.blog-main-body h3').textContent = f.title;
+    document.querySelector('.blog-main-body p').textContent = f.description.replace(/<[^>]*>/g,'').substring(0,150) + '...';
+    document.querySelector('.blog-main-body a').href = f.link;
+    const minis = document.querySelectorAll('.blog-mini');
+    for (let i = 0; i < Math.min(4, data.items.length - 1); i++) {
+      const m = minis[i];
+      if (!m) continue;
+      m.querySelector('h4').textContent = data.items[i+1].title;
+      m.onclick = () => window.open(data.items[i+1].link, '_blank');
+    }
+  } catch(e) { /* shows placeholder content if rss fails */ }
+}
+loadPosts();
+</script>
+
+
+<!-- Newsletter Script -->
+<script>
+  var submitted = false;
+
+  function formSubmittedNewsletter() {
+    document.getElementById("gformnewsletter").style.display = "none";
+    document.getElementById("success-message-newsletter").style.display = "block";
+  }
+</script>
+
+<!-- Contact Script -->
+<script>
+  var submitted = false;
+
+  function formSubmitted() {
+    document.getElementById("gformcontact").style.display = "none";
+    document.getElementById("success-message-contact").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
