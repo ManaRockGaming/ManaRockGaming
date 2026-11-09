@@ -14,6 +14,22 @@
   gtag('config', '[GOOGLE_ANALYTICS_ID]');
 </script>
 <link rel="stylesheet" type="text/css" href="general.css" />
+<style>
+  
+  .origin-wrap-pokemon-1 { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: start; grid-template-columns: 20fr 60fr 20fr; }
+  .origin-wrap-pokemon-2 { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: start; grid-template-columns: 20fr 30fr 50fr; }
+
+  @media (max-width: 768px) {
+    
+   
+    .origin-wrap-pokemon-1 { grid-template-columns: 1fr; }
+    .origin-wrap-pokemon-1 img { display: block; margin: 0 auto; }
+    .origin-wrap-pokemon-2 { grid-template-columns: 1fr; }
+    .origin-wrap-pokemon-2 img { display: block; margin: 0 auto; }
+    .origin-wrap-pokemon-2 > div:first-child { grid-row: 3; }
+  }
+
+</style>
 </head>
 <body>
 
@@ -95,7 +111,7 @@
 </div>
 
 <!-- title -->
-<section class="section light" id="Title" style="min-height: 70vh; background-image: linear-gradient(rgba(59, 10, 87, 0.70), rgba(162, 0, 255, 0.95)), url('Pokemon/Background-Pokemon-Battle.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<section class="section light" id="Title" style=" background-image: linear-gradient(rgba(59, 10, 87, 0.70), rgba(162, 0, 255, 0.95)), url('Pokemon/Background-Pokemon-Battle.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <div class="container">
   
     <div class="origin-big" style="color: white; text-align: center;">
@@ -112,7 +128,7 @@
 <!-- introduction -->
 <section class="section light" id="Introduction">
   <div class="container">
-    <div class="origin-wrap" style="grid-template-columns: 20fr 60fr 20fr;">
+    <div class="origin-wrap-pokemon-1">
       <div>
         <div class="origin-label">Our Purpose?</div>
         <div class="origin-big">Friendship,<br>Reading,<br><span>& Thinking</span></div>
@@ -147,7 +163,7 @@
       <a href="https://kershawcountylibrary.libcal.com/event/17982027" target="_blank" class="btn btn-outline-gold btn-sm">Register Today →</a>
     </div>
     
-    <div class="origin-wrap" style="grid-template-columns: 20fr 30fr 50fr;">
+    <div class="origin-wrap-pokemon-2">
       <div>
       
         <img src="Pokemon/Trainer-Pikachu.png">
@@ -228,9 +244,9 @@
       <a href="https://kershawcountylibrary.libcal.com/event/17982027" target="_blank" class="btn btn-outline btn-sm">Register Today →</a>
     </div>
     <div class="event-grid">
-      <!-- Roll Con 2026  -->
+      <!-- POKEMON CLUB  -->
       <div class="event-card">
-        <div class="ec-banner" style="background-image: url('Events/RollCon 2026.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="ec-banner" style="background-image: url('Pokemon/Poster-Pokemon-Club-1.png'); aspect-ratio: 3 / 4; padding: 24px; position: relative; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;">
           <div class="ec-day" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-family: 'Bebas Neue', sans-serif; font-size: 70px; font-weight: 700; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; color: #fff; text-shadow: 0 3px 8px rgba(0,0,0,0.9); z-index: 2;">
           </div>
         </div>
